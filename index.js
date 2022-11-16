@@ -27,4 +27,5 @@ app.listen(PORT, () => {
   console.log(`running on port ${PORT}`);
   console.log("aaaa");
   console.log("bbb");
+  console.log(apple);
 });
