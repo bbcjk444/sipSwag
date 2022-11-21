@@ -1,0 +1,48 @@
+.containers{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 800px;
+    height: 751px;
+}
+.mainLogo{
+    width: 100px;
+    height: 100px;
+}
+.mainheader{
+    display: flex;
+    justify-content: space-around;
+}
+.mainHeaderButtons button{
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+.mainHeaderButtons button:first-child{
+    background-color: burlywood;
+}
+.MainScreen{
+    width: 750px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.Homepage-Nav{
+    display: flex;
+    justify-content:space-around;
+}
+
+#test1{
+    color:blue;
+}
+
+#test2{
+    color:blue;
+}
+
+#test3{
+    color:blue;
+}
