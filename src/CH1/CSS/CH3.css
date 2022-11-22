@@ -1,0 +1,51 @@
+.table {
+  position: absolute;
+  top: 87px;
+  left: 33px;
+  width: 348px;
+  height: 404px;
+  object-fit: cover;
+}
+.rectangle-ch3-div {
+  position: absolute;
+  top: 506px;
+  left: 0;
+  background-color: #282c30;
+  width: 414px;
+  height: 218px;
+}
+.polygon-icon {
+  position: absolute;
+  top: 604.75px;
+  left: 370.94px;
+  width: 12.12px;
+  height: 11.25px;
+}
+.p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p1 {
+  margin: 0;
+}
+.b,
+.b1 {
+  position: absolute;
+  top: 536px;
+  left: 32px;
+  display: inline-block;
+}
+.b1 {
+  top: 597px;
+}
+.ch3-div {
+  position: relative;
+  background-color: #a8e5e8;
+  width: 100%;
+  height: 724px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: white;
+  font-family: var(--font-noto-sans-kr);
+}

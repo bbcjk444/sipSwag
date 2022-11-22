@@ -1,0 +1,40 @@
+.rectangle-ch2-div {
+  position: absolute;
+  top: 506px;
+  left: 0;
+  background-color: #282c30;
+  width: 414px;
+  height: 218px;
+}
+.polygon-icon {
+  position: absolute;
+  top: 565.75px;
+  left: 268.94px;
+  width: 12.12px;
+  height: 11.25px;
+}
+.p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p1 {
+  margin: 0;
+}
+.b {
+  position: absolute;
+  color: white;
+  top: 536px;
+  left: 32px;
+  display: inline-block;
+}
+.ch2-div {
+  position: relative;
+  background-color: #3a4a56;
+  width: 100%;
+  height: 724px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  font-family: var(--font-noto-sans-kr);
+}
