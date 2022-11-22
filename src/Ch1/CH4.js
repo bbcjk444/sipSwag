@@ -5,7 +5,7 @@ const CH4 = () => {
   return (
     <div className="ch1-3-div">
       <img className="image-239-icon" alt="" src={table} />
-      <div className="rectangle-div" />
+      <div className="rectangl-ch4-div" />
       <img className="polygon-icon" alt="" src="../polygon-17.svg" />
       <b className="b">
         <p className="p">호다닥 컴퓨터 전원을 키고,</p>

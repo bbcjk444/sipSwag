@@ -1,63 +1,62 @@
-.rectangle-div{
-    position: absolute;
-    top: 506px;
-    left: 4px;
-    background-color: #282c30;
-    width: 414px;
-    height: 218px;
+.rectangle-ch2-div {
+  position: absolute;
+  top: 506px;
+  left: 4px;
+  background-color: #282c30;
+  width: 414px;
+  height: 218px;
 }
 
 .polygon-icon {
-    position: absolute;
-    top: 610.75px;
-    left: 220.94px;
-    width: 12.12px;
-    height: 11.25px;
+  position: absolute;
+  top: 610.75px;
+  left: 220.94px;
+  width: 12.12px;
+  height: 11.25px;
 }
 
 .p {
-    margin-block-start: 0;
-    margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .p2 {
-    margin: 0;
+  margin: 0;
 }
 
 .b {
-    position: absolute;
-    top: 536px;
-    left: 32px;
-        color: white;
-    display: inline-block;
+  position: absolute;
+  top: 536px;
+  left: 32px;
+  color: white;
+  display: inline-block;
 }
 
 .image-237-icon,
 .image-238-icon {
-    position: absolute;
-    top: 104px;
-    left: 66px;
-    width: 122.74px;
-    height: 130.97px;
-    object-fit: cover;
+  position: absolute;
+  top: 104px;
+  left: 66px;
+  width: 122.74px;
+  height: 130.97px;
+  object-fit: cover;
 }
 
 .image-238-icon {
-    top: 199px;
-    left: 261px;
-    width: 105.52px;
-    height: 107.26px;
+  top: 199px;
+  left: 261px;
+  width: 105.52px;
+  height: 107.26px;
 }
 
 .ch1-1-div {
-    position: relative;
-    background-color: #3a4a56;
-    width: 425px;
-    height: 800px;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-base);
-    color: var(--color-gray-100);
-    font-family: var(--font-noto-sans-kr);
+  position: relative;
+  background-color: #3a4a56;
+  width: 100%;
+  height: 820px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  font-family: var(--font-noto-sans-kr);
 }
-

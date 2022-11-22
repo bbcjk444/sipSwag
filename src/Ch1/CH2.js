@@ -5,7 +5,7 @@ import rightlight from "./img/rightlight.png";
 const CH2 = () => {
   return (
     <div className="ch1-1-div">
-      <div className="rectangle-div" />
+      <div className="rectangle-ch2-div" />
       <img className="polygon-icon" alt="" src="../polygon-17.svg" />
       <b className="b">
         <p className="p">띠리리링....띠리리링.......시끄러운 알람소리.....</p>
@@ -13,6 +13,7 @@ const CH2 = () => {
         <p className="p">&nbsp;</p>
         <p className="p2">수강신청일이다!!!!!!!!!!!!!</p>
       </b>
+
       <img className="image-237-icon" alt="" src={leftlight} />
       <img className="image-238-icon" alt="" src={rightlight} />
     </div>

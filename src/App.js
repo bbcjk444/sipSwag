@@ -6,15 +6,16 @@ import Mypage from "./Mypage";
 import FindID from "./findID";
 import FindPW from "./findPW";
 import UpdateUser from "./UpdateUser";
-import Scecheck from './scenariocall';
-import Main from './Ch1/CH1';
+import Scecheck from "./scenariocall";
+import Main from "./Ch1/CH1";
+import Test from "./Ch1/CH5";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" exact={true} element={<Main />} />
+        <Route path="/main" exact={true} element={<Main />} />
         <Route path="/join" element={<Join />} />
         <Route path="/UpdateUser" element={<UpdateUser />} />
         <Route path="/login" element={<Login />} />
@@ -22,6 +23,7 @@ function App() {
         <Route path="/findID" element={<FindID />} />
         <Route path="/findPW" element={<FindPW />} />
         <Route path="/scecheck" element={<Scecheck />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </Router>
   );
