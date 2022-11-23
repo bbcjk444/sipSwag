@@ -1,9 +1,8 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Modal from "./Ch1/Modal";
 import Modal2 from "./Ch1/Modal2";
-import Join from "./join";
+import Modal from "./Ch1/Modal";
 
 const Login = () => {
   const idRef = useRef();
@@ -20,7 +19,7 @@ const Login = () => {
     setModalOpen2(false);
   };
 
-  const handleLogin = () => {
+  const handleLogin = (handleClose) => {
     if (idRef.current.value === "" || idRef.current.value === undefined) {
       alert("아이디를 입력하세요");
       idRef.current.focus();
@@ -49,7 +48,9 @@ const Login = () => {
           console.log("로페 이름 확인 => " + sessionStorage.getItem("name"));
           window.sessionStorage.setItem("id", idRef.current.value);
           alert("세션: " + window.sessionStorage.getItem("id"));
-          Navigate("/");
+          // Navigate(handleClose());
+          Modal.setShow(true);
+          Modal.setShow(false);
         } else {
           alert("계정 없음");
           Navigate("/login");
@@ -112,8 +113,6 @@ const Login = () => {
           value="▷계정이 없으신가요?"
           onClick={openModal2}
           className="submit"
-          open={modalOpen2}
-          close={closeModal2}
         />
         <br />
         <br />

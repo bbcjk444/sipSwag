@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Modal2 from "./Ch1/Modal2";
 
 const Join = () => {
   const idRef = useRef();
@@ -122,7 +123,6 @@ const Join = () => {
           console.log("handleJoin =>", res);
           if (res.data.affectedRows === 1) {
             alert("회원가입이 되었습니다");
-            navigate("/login");
           } else {
             alert("회원가입이 되지 않았습니다.");
             navigate("/join");
@@ -136,7 +136,9 @@ const Join = () => {
     }
   };
 
-  const handleLogin = () => {};
+  const handleLogin = () => {
+    Modal2.setModalOpen2(false);
+  };
 
   return (
     <div className="Join" align="center">
