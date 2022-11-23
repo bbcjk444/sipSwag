@@ -8,14 +8,14 @@ import FindPW from "./findPW";
 import UpdateUser from "./UpdateUser";
 import Scecheck from "./scenariocall";
 import Main from "./Ch1/CH1";
-import Test from "./Ch1/CH5";
+import Test from "./Ch1/CH11";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/main" exact={true} element={<Main />} />
+        <Route path="/" exact={true} element={<Main />} />
         <Route path="/join" element={<Join />} />
         <Route path="/UpdateUser" element={<UpdateUser />} />
         <Route path="/login" element={<Login />} />
