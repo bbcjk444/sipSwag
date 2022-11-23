@@ -17,10 +17,11 @@ let corsOptions = {
 app.use(cors(corsOptions));
 
 const db = mysql.createPool({
-  host: "127.0.0.1",
-  user: "root",
+  host: "project-db-stu.ddns.net",
+  user: "jsGame",
   password: "123456",
-  database: "bbs",
+  database: "jsGame",
+  port: "3307",
 });
 
 const multer = require("multer");

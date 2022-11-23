@@ -1,59 +1,35 @@
-.rectangle-ch2-div {
+.b,
+.b1 {
   position: absolute;
-  top: 506px;
-  left: 4px;
-  background-color: #282c30;
-  width: 414px;
-  height: 218px;
-}
-
-.polygon-icon {
-  position: absolute;
-  top: 610.75px;
-  left: 220.94px;
-  width: 12.12px;
-  height: 11.25px;
-}
-
-.p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
-.p2 {
-  margin: 0;
-}
-
-.b {
-  position: absolute;
-  top: 536px;
-  left: 32px;
-  color: white;
+  top: 40px;
+  left: 120px;
   display: inline-block;
 }
-
-.image-237-icon,
-.image-238-icon {
+.b1 {
+  top: 97px;
+  left: 157px;
+  color: #35f9ca;
+}
+.man,
+.woman {
   position: absolute;
-  top: 104px;
-  left: 66px;
-  width: 122.74px;
-  height: 130.97px;
+  top: 155px;
+  left: 63px;
+  width: 308px;
+  height: 200px;
   object-fit: cover;
 }
-
-.image-238-icon {
-  top: 199px;
-  left: 261px;
-  width: 105.52px;
-  height: 107.26px;
+.woman {
+  top: 404px;
+  left: 58px;
+  width: 317px;
+  height: 203px;
 }
-
-.ch1-1-div {
+.ch1-2-div {
   position: relative;
   background-color: #3a4a56;
   width: 100%;
-  height: 820px;
+  height: 724px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-base);
