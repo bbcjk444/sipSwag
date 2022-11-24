@@ -1,0 +1,22 @@
+.image-261-icon4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 761px;
+  object-fit: cover;
+}
+.polygon-icon {
+  position: absolute;
+  top: 559.75px;
+  left: 217.94px;
+  width: 12.12px;
+  height: 11.25px;
+}
+.ch1-8 {
+  position: relative;
+  background-color: var(--color-gray-400);
+  width: 100%;
+  height: 724px;
+  overflow: hidden;
+}

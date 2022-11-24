@@ -1,0 +1,67 @@
+.image-261-icon5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 761px;
+  object-fit: cover;
+}
+.vector-icon3 {
+  position: absolute;
+  height: 34.39%;
+  width: 100%;
+  top: 69.06%;
+  right: 0;
+  bottom: -3.45%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.div32 {
+  position: absolute;
+  top: 530px;
+  left: 30px;
+  font-weight: 900;
+  display: inline-block;
+}
+.p51 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p52 {
+  margin: 0;
+}
+.div33 {
+  position: absolute;
+  top: 564px;
+  left: 30px;
+  font-weight: 500;
+  display: inline-block;
+}
+.icon,
+.polygon-icon1 {
+  position: absolute;
+  top: 593.75px;
+  left: 210.94px;
+  width: 12.12px;
+  height: 11.25px;
+}
+.icon {
+  top: 306px;
+  left: 208px;
+  width: 211px;
+  height: 194px;
+  object-fit: cover;
+}
+.ch1-121 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 724px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-noto-sans-kr);
+}

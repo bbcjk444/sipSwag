@@ -1,0 +1,48 @@
+.rectangle-div57 {
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  border-radius: var(--br-sm);
+  background-color: var(--color-white);
+  width: 385px;
+  height: 691px;
+}
+.group-icon38,
+.group-icon39 {
+  position: absolute;
+  top: 478px;
+  left: 60px;
+  width: 300px;
+  height: 48px;
+}
+.group-icon39 {
+  height: 3.87%;
+  width: 50.95%;
+  top: 13.81%;
+  right: 24.52%;
+  bottom: 82.32%;
+  left: 24.52%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-icon40,
+.group-icon41 {
+  position: absolute;
+  top: 223px;
+  left: 63px;
+  width: 119px;
+  height: 148.96px;
+  object-fit: cover;
+}
+.group-icon41 {
+  left: 241px;
+  height: 150px;
+}
+.div40 {
+  position: relative;
+  background-color: var(--color-turquoise-200);
+  width: 100%;
+  height: 724px;
+  overflow: hidden;
+}
