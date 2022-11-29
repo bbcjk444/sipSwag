@@ -1,0 +1,87 @@
+.image-255-icon1-one-fourteen {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 840px;
+  height: 800px;
+  object-fit: cover;
+}
+.image-256-icon1-one-fourteen,
+.image-257-icon1-one-fourteen,
+.image-258-icon1-one-fourteen,
+.image-259-icon1-one-fourteen {
+  top: 1115px;
+  left: 0px;
+  width: 900px;
+  height: 160px;
+}
+.image-257-icon1-one-fourteen,
+.image-258-icon1-one-fourteen,
+.image-259-icon1-one-fourteen {
+  top: 1052px;
+}
+.image-258-icon1-one-fourteen,
+.image-259-icon1-one-fourteen {
+  top: 988px;
+}
+.image-259-icon1-one-fourteen {
+  top: 92px;
+}
+.group-div1-one-fourteen,
+.vector-icon1-one-fourteen {
+  top: 0;
+  left: 0px;
+  width: 800px;
+  height: 700px;
+}
+.vector-icon1-one-fourteen {
+  height: 500px;
+  width: 100%;
+  top: 620px;
+  overflow: hidden;
+}
+.div5-one-fourteen,
+.icon2-one-fourteen {
+  position: absolute;
+}
+.icon2-one-fourteen {
+  top: 500px;
+  left: 490px;
+  width: 330px;
+  height: 300px;
+  object-fit: cover;
+}
+.div5-one-fourteen {
+  position: absolute;
+  top: 850px;
+  left: 50px;
+  font-weight: 500;
+  font-size: 30px;
+  display: inline-block;
+}
+.p4-one-fourteen {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p5-one-fourteen {
+  margin: 0;
+}
+.div6-one-fourteen {
+  position: absolute;
+  top: 900px;
+  left: 50px;
+  font-weight: 500;
+  font-size: 30px;
+  display: inline-block;
+}
+.ch1-14-one-fourteen {
+  position: relative;
+  background-color: var(--color-gray-500);
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-noto-sans-kr);
+}

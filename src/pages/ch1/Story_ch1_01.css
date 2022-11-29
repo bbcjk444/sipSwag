@@ -1,0 +1,22 @@
+.b13-one-one,
+.b14-one-one {
+  position: absolute;
+  top: 450px;
+  left: 80px;
+  display: inline-block;
+  font-size: 40px;
+}
+.b14-one-one {
+  top: 510px;
+}
+.ch1-15-one-one {
+  position: relative;
+  background-color: var(--color-gray-500);
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-200);
+  font-family: var(--font-noto-sans-kr);
+}

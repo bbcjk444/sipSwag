@@ -1,0 +1,53 @@
+.rectangle-div-main2 {
+  position: absolute;
+  top: 25px;
+  left: 22px;
+  border-radius: var(--br-sm);
+  background-color: var(--color-white);
+  width: 95%;
+  height: 96%;
+}
+.group-icon38-main2,
+.group-icon39-main2 {
+  position: absolute;
+  top: 700px;
+  left: 230px;
+  width: 400px;
+  height: 100px;
+}
+.group-icon39-main2 {
+  height: 3.87%;
+  width: 50.95%;
+  top: 13.81%;
+  right: 24.52%;
+  bottom: 82.32%;
+  left: 24.52%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-icon40-main2,
+.group-icon41-main2 {
+  position: absolute;
+  top: 340px;
+  left: 190px;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+.group-icon41-main2 {
+  left: 450px;
+  width: 200px;
+  height: 250px;
+}
+.div-main2 {
+  position: relative;
+  background-color: #52d2c4;
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-4xl);
+  color: #ff31f0;
+  font-family: "Noto Sans KR";
+}

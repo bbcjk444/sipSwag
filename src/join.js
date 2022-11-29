@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Modal2 from "./Ch1/Modal2";
 
 const Join = () => {
   const idRef = useRef();
@@ -136,9 +135,7 @@ const Join = () => {
     }
   };
 
-  const handleLogin = () => {
-    Modal2.setModalOpen2(false);
-  };
+  const handleLogin = () => {};
 
   return (
     <div className="Join" align="center">

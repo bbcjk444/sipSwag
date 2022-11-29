@@ -1,8 +1,6 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Modal2 from "./Ch1/Modal2";
-import Modal from "./Ch1/Modal";
 
 const Login = () => {
   const idRef = useRef();
@@ -49,8 +47,6 @@ const Login = () => {
           window.sessionStorage.setItem("id", idRef.current.value);
           alert("세션: " + window.sessionStorage.getItem("id"));
           // Navigate(handleClose());
-          Modal.setShow(true);
-          Modal.setShow(false);
         } else {
           alert("계정 없음");
           Navigate("/login");
@@ -129,7 +125,6 @@ const Login = () => {
           onClick={findPW}
         />
       </form>
-      <Modal2 open={modalOpen2} close={closeModal2} />
     </div>
   );
 };

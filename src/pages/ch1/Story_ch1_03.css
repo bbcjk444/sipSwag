@@ -1,0 +1,22 @@
+.b10-one-three,
+.b9-one-three {
+  position: absolute;
+  top: 450px;
+  left: 80px;
+  display: inline-block;
+  font-size: 40px;
+}
+.b10-one-three{
+  top: 510px;
+}
+.ch1-3-one-three {
+  position: relative;
+  background-color: var(--color-gray-500);
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-200);
+  font-family: var(--font-noto-sans-kr);
+}

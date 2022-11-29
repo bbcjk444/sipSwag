@@ -1,0 +1,144 @@
+.icon3 {
+  position: absolute;
+  height: 118.09%;
+  width: 105.48%;
+  top: 0;
+  right: -5.48%;
+  bottom: -18.09%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.rectangle-div31 {
+  position: absolute;
+  top: 185px;
+  left: 17px;
+  border-radius: var(--br-lg);
+  background-color: #fff;
+  width: 385px;
+  height: 388px;
+}
+.group-icon9 {
+  position: absolute;
+  top: 610px;
+  left: 29px;
+  width: 362px;
+  height: 50px;
+}
+.group-icon10,
+.group-icon11,
+.vector-icon3 {
+  position: absolute;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-icon10 {
+  height: 7.61%;
+  width: 72.83%;
+  top: 6.91%;
+  right: 12.62%;
+  bottom: 85.48%;
+  left: 14.55%;
+  opacity: 0.94;
+}
+.group-icon11,
+.vector-icon3 {
+  height: 6.23%;
+  width: 70.45%;
+  top: 7.6%;
+  right: 13.81%;
+  bottom: 86.17%;
+  left: 15.74%;
+}
+.vector-icon3 {
+  height: 1.93%;
+  width: 6.19%;
+  top: 7.66%;
+  right: 86.67%;
+  bottom: 90.41%;
+  left: 7.14%;
+}
+.rectangle-div32,
+.rectangle-div33,
+.rectangle-div34 {
+  position: absolute;
+  top: 206px;
+  left: 39px;
+  background-color: #d9d9d9;
+  width: 106px;
+  height: 106px;
+}
+.rectangle-div33,
+.rectangle-div34 {
+  top: 326px;
+}
+.rectangle-div34 {
+  top: 446px;
+}
+.rectangle-div35,
+.rectangle-div36,
+.rectangle-div37,
+.rectangle-div38,
+.rectangle-div39,
+.rectangle-div40 {
+  position: absolute;
+  top: 206px;
+  left: 157px;
+  background-color: #d9d9d9;
+  width: 106px;
+  height: 106px;
+}
+.rectangle-div36,
+.rectangle-div37,
+.rectangle-div38,
+.rectangle-div39,
+.rectangle-div40 {
+  top: 326px;
+}
+.rectangle-div37,
+.rectangle-div38,
+.rectangle-div39,
+.rectangle-div40 {
+  top: 446px;
+}
+.rectangle-div38,
+.rectangle-div39,
+.rectangle-div40 {
+  top: 206px;
+  left: 276px;
+}
+.rectangle-div39,
+.rectangle-div40 {
+  top: 326px;
+}
+.rectangle-div40 {
+  top: 446px;
+}
+.div3 {
+  position: absolute;
+  top: 115px;
+  left: 38px;
+  display: inline-block;
+}
+.ready-icon {
+  position: absolute;
+  top: 298px;
+  left: 41px;
+  width: 339px;
+  height: 128px;
+  object-fit: cover;
+}
+.ch1-13 {
+  position: relative;
+  background-color: #52d2c4;
+  width: 100%;
+  height: 724px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: #2a2d34;
+  font-family: "Noto Sans KR";
+}

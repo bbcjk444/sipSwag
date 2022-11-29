@@ -1,0 +1,129 @@
+.image-261-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 761px;
+  object-fit: cover;
+}
+.group-icon4,
+.rectangle-div2 {
+  position: absolute;
+  top: 605px;
+  left: 59px;
+  width: 300px;
+  height: 48px;
+}
+.rectangle-div2 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: var(--color-gray-200);
+  height: 54px;
+}
+.p6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p7 {
+  margin: 0;
+  font-size: var(--font-size-xl);
+}
+.div9 {
+  position: absolute;
+  top: 7px;
+  left: 30px;
+  display: inline-block;
+}
+.group-div3,
+.rectangle-div3 {
+  position: absolute;
+  top: 227px;
+  left: 60px;
+  width: 300px;
+  height: 54px;
+}
+.rectangle-div3 {
+  top: 298px;
+  border-radius: var(--br-md);
+  background-color: #147176;
+}
+.p9 {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  color: #f5df70;
+}
+.div10,
+.div11 {
+  position: absolute;
+  display: inline-block;
+}
+.div10 {
+  top: 307px;
+  left: 84px;
+  color: var(--color-white);
+}
+.div11 {
+  top: 8px;
+  left: 36px;
+}
+.group-div4 {
+  position: absolute;
+  top: 369px;
+  left: 60px;
+  width: 300px;
+  height: 54px;
+}
+.div12 {
+  position: absolute;
+  top: 8px;
+  left: 30px;
+  display: inline-block;
+}
+.group-div5,
+.group-div6,
+.group-div7 {
+  position: absolute;
+  top: 511px;
+  left: 59px;
+  width: 300px;
+  height: 54px;
+}
+.group-div6,
+.group-div7 {
+  top: 440px;
+  left: 60px;
+}
+.group-div7 {
+  top: 156px;
+}
+.b,
+.div15 {
+  position: absolute;
+  display: inline-block;
+}
+.div15 {
+  top: 97px;
+  left: 61px;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-500);
+  text-align: left;
+}
+.b {
+  height: 2.9%;
+  width: 74.29%;
+  top: 9.12%;
+  left: 12.86%;
+  font-size: var(--font-size-3xl);
+}
+.ch1-14-2 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 724px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-kr);
+}

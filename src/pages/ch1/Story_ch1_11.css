@@ -1,0 +1,90 @@
+.image-261-icon7-one-eleven {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 840px;
+  height: 800px;
+  object-fit: cover;
+}
+.group-div16-one-eleven,
+.vector-icon6-one-eleven{
+  top: 0;
+  left: 0px;
+  width: 800px;
+  height: 700px;
+}
+.vector-icon6-one-eleven {
+  height: 500px;
+  width: 100%;
+  top: 620px;
+  right: 0px;
+  overflow: hidden;
+}
+.p55-one-eleven {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p56-one-eleven {
+  margin: 0;
+}
+.div37-one-eleven {
+  position: absolute;
+  top: 850px;
+  left: 50px;
+  font-weight: 500;
+  font-size: 30px;
+  display: inline-block;
+}
+.group-icon38-one-eleven,
+.group-icon39-one-eleven {
+  position: absolute;
+  height: 30.66%;
+  width: 83.33%;
+  top: 23.62%;
+  right: 8.33%;
+  bottom: 45.72%;
+  left: 8.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-icon39-one-eleven {
+  height: 15.44%;
+  width: 28.75%;
+  top: 31.77%;
+  right: 53.39%;
+  bottom: 52.79%;
+  left: 17.86%;
+}
+.b6-one-eleven,
+.b7-one-eleven,
+.inssamacu-div-one-eleven {
+  position: absolute;
+  left: 50.71%;
+  display: inline-block;
+}
+.b6-one-eleven {
+  top: 32.32%;
+  font-size: 24px;
+  color: black;
+}
+.b7-one-eleven,
+.inssamacu-div-one-eleven {
+  width: 33.33%;
+  top: 37.85%;
+  color: black;
+}
+.inssamacu-div-one-eleven {
+  top: 41.71%;
+}
+.ch1-111-one-eleven {
+  position: relative;
+  background-color: var(--color-gray-500);
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-noto-sans-kr);
+}

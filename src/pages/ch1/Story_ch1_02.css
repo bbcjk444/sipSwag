@@ -1,0 +1,22 @@
+.b11-one-two,
+.b12-one-two {
+  position: absolute;
+  top: 450px;
+  left: 80px;
+  display: inline-block;
+  font-size: 40px;
+}
+.b12-one-two {
+  top: 510px;
+}
+.ch1-2-one-two {
+  position: relative;
+  background-color: var(--color-gray-500);
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-200);
+  font-family: var(--font-noto-sans-kr);
+}
