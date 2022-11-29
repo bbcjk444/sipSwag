@@ -33,6 +33,7 @@ import Ch1_game_result2 from "./pages/ch1/Game_ch1_result_02";
 import Ch1_game_result3 from "./pages/ch1/Game_ch1_result_03";
 import Ch1_game_clear from "./pages/ch1/Game_clear";
 import Ch1_Clear from "./pages/ch1/Story_ch1_clear";
+import Game1 from "./pages/ch1/game1/OneToFifty"
 import { useEffect } from "react";
 
 function App() {
@@ -77,6 +78,8 @@ function App() {
       <Route path="/ch1story15" element={<Ch1_Story15 />} />
 
       <Route path="/ch1game1" element={<Ch1_Game1 />} />
+
+      <Route path="/game1" element={<Game1 />} />
 
       <Route path="/ch1game2" element={<Ch1_Game2 />} />
 

@@ -9,42 +9,7 @@ const Game_ch1_play_01 = () => {
   window.sessionStorage.setItem('timescore',37);
 
   const nextstory = () => {
-    axios
-    .post('http://localhost:8008/getstory', {
-      scenario_num: 1,
-      chapter_num: 1,
-      scene_num: 13,
-    })
-    .then((res) => {
-      console.log('임의값 확인 => ' + sessionStorage.getItem('timescore'));
-      console.log('스토리 리턴값 확인1 => ' + JSON.stringify(res));
-      if(sessionStorage.getItem('timescore') <= 20){
-        window.sessionStorage.setItem('scence 1-result1-1', JSON.stringify(res.data[0].speak_story).substring(1,JSON.stringify(res.data[0].speak_story).length-1));
-        window.sessionStorage.setItem('scence 1-result1-2', JSON.stringify(res.data[1].speak_story).substring(1,JSON.stringify(res.data[1].speak_story).length-1));
-        document.getElementById('story 1-result1-1').innerText = sessionStorage.getItem('scence 1-result1-1');
-        document.getElementById('story 1-result1-2').innerText = sessionStorage.getItem('scence 1-result1-2');
-      }else if(sessionStorage.getItem('timescore') > 20 && sessionStorage.getItem('timescore') <= 30){
-        window.sessionStorage.setItem('scence 1-result2-1', JSON.stringify(res.data[2].speak_story).substring(1,JSON.stringify(res.data[2].speak_story).length-1));
-        window.sessionStorage.setItem('scence 1-result2-2', JSON.stringify(res.data[3].speak_story).substring(1,JSON.stringify(res.data[3].speak_story).length-1));
-        document.getElementById('story 1-result2-1').innerText = sessionStorage.getItem('scence 1-result2-1');
-        document.getElementById('story 1-result2-2').innerText = sessionStorage.getItem('scence 1-result2-2');
-      }else if(sessionStorage.getItem('timescore') > 31){
-        window.sessionStorage.setItem('scence 1-result3-1', JSON.stringify(res.data[4].speak_story).substring(1,JSON.stringify(res.data[4].speak_story).length-1));
-        window.sessionStorage.setItem('scence 1-result3-2', JSON.stringify(res.data[5].speak_story).substring(1,JSON.stringify(res.data[5].speak_story).length-1));
-        document.getElementById('story 1-result3-1').innerText = sessionStorage.getItem('scence 1-result3-1');
-        document.getElementById('story 1-result3-2').innerText = sessionStorage.getItem('scence 1-result3-2');
-      }
-     })
-    .catch((e) => {
-      console.error(e);
-    });
-    if(sessionStorage.getItem('timescore') <= 20){
-      navigate('/ch1result1')
-    }else if(sessionStorage.getItem('timescore') > 20 && sessionStorage.getItem('timescore') <= 30){
-      navigate('/ch1result2')
-    }else if(sessionStorage.getItem('timescore') > 31){
-      navigate('/ch1result3')
-    }
+    navigate('/game1')
   }
 
   return (

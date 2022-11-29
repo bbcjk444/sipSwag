@@ -1,0 +1,35 @@
+.contain{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.gameCounts{
+    display: flex;
+}
+.firstGameTitle{
+    text-align: center;
+    margin-bottom:180px;
+    margin-left: 10px;
+}
+.blood{
+    width: 26px;
+    height: 14px;
+    margin-left: 35px;
+}
+.BoardTitle{
+    display: flex;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.StartButton{
+    cursor: pointer;
+    position: absolute;
+    top: -300px;
+    right: -185px;
+}
+.startButtonContainer{
+    position: relative;
+}
+
