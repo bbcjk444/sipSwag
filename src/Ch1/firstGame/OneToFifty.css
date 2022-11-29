@@ -1,0 +1,19 @@
+.contain{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.gameCounts{
+    display: flex;
+}
+.firstGameTitle{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    border: 3px solid black;
+    background: whitesmoke;
+    border-radius: 20px;
+}
+
