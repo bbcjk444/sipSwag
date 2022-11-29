@@ -1,0 +1,160 @@
+.icon,
+.rectangle-div {
+  position: absolute;
+  left: 0;
+}
+.icon {
+  height: 118.09%;
+  width: 105.48%;
+  top: 0;
+  right: -5.48%;
+  bottom: -18.09%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.rectangle-div {
+  top: 130px;
+  border-radius: var(--br-lg);
+  background-color: #fff;
+  width: 385px;
+  height: 388px;
+}
+.group-icon {
+  position: absolute;
+  top: 555px;
+  left: 12px;
+  width: 362px;
+  height: 50px;
+}
+.group-icon1,
+.group-icon2,
+.vector-icon {
+  position: absolute;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-icon1 {
+  height: 9.11%;
+  width: 79.45%;
+  top: -0.83%;
+  right: 9.09%;
+  bottom: 91.72%;
+  left: 11.46%;
+  opacity: 0.94;
+}
+.group-icon2,
+.vector-icon {
+  height: 7.46%;
+  width: 76.85%;
+  top: 0;
+  right: 10.39%;
+  bottom: 92.54%;
+  left: 12.76%;
+}
+.vector-icon {
+  height: 2.31%;
+  width: 6.75%;
+  top: 0.07%;
+  right: 89.87%;
+  bottom: 97.62%;
+  left: 3.38%;
+}
+.rectangle-div1,
+.rectangle-div2,
+.rectangle-div3 {
+  position: absolute;
+  top: 151px;
+  left: 22px;
+  background-color: #a6f0e8;
+  width: 106px;
+  height: 106px;
+}
+.rectangle-div2,
+.rectangle-div3 {
+  top: 271px;
+}
+.rectangle-div3 {
+  top: 391px;
+}
+.rectangle-div4,
+.rectangle-div5,
+.rectangle-div6,
+.rectangle-div7,
+.rectangle-div8,
+.rectangle-div9 {
+  position: absolute;
+  top: 151px;
+  left: 140px;
+  background-color: #a6f0e8;
+  width: 106px;
+  height: 106px;
+}
+.rectangle-div5,
+.rectangle-div6,
+.rectangle-div7,
+.rectangle-div8,
+.rectangle-div9 {
+  top: 271px;
+}
+.rectangle-div6,
+.rectangle-div7,
+.rectangle-div8,
+.rectangle-div9 {
+  top: 391px;
+}
+.rectangle-div7,
+.rectangle-div8,
+.rectangle-div9 {
+  top: 151px;
+  left: 259px;
+}
+.rectangle-div8,
+.rectangle-div9 {
+  top: 271px;
+}
+.rectangle-div9 {
+  top: 391px;
+}
+.div {
+  position: absolute;
+  top: 60px;
+  left: 21px;
+  display: inline-block;
+}
+.group-div,
+.rectangle-div10 {
+  position: absolute;
+  top: 55px;
+  left: 17px;
+  width: 385px;
+  height: 605px;
+}
+.rectangle-div10 {
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 420px;
+  height: 724px;
+}
+.finish-1-icon {
+  position: absolute;
+  top: 303px;
+  left: 55px;
+  width: 311px;
+  height: 118px;
+  object-fit: cover;
+}
+.ch1-1 {
+  position: relative;
+  background-color: #52d2c4;
+  width: 100%;
+  height: 724px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: #2a2d34;
+  font-family: var(--font-noto-sans-kr);
+}

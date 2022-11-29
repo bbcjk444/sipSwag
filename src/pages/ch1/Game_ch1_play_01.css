@@ -1,0 +1,113 @@
+.icon4-one-game1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 840px;
+  height: 1180px;
+  object-fit: cover;
+}
+.rectangle-div67-one-game1 {
+  position: absolute;
+  top: 350px;
+  left: 60px;
+  border-radius: var(--br-lg);
+  background-color: white;
+  width: 700px;
+  height: 800px;
+}
+.game1-icon-one-game1 {
+  position: absolute;
+  height: 13.49%;
+  width: 80.24%;
+  top: 5.66%;
+  right: 13.57%;
+  bottom: 80.84%;
+  left: 6.19%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.p46-one-game1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 90px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.p47-one-game1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 10px;
+  margin-left: 75px;
+  font-size: 20px;
+}
+.p48-one-game1 {
+  margin: 0;
+}
+.p49-one-game1 {
+  margin: 0;
+}
+.p50-one-game1 {
+  margin: 0;
+}
+.div31-one-game1,
+.div32-one-game1 {
+  position: absolute;
+  top: 155px;
+  left: 53px;
+  display: inline-block;
+}
+.div32-one-game1 {
+  top: 380px;
+  left: 120px;
+  font-size: 28px
+}
+.image-264-icon-one-game1 {
+  position: absolute;
+  top: 520px;
+  left: 175px;
+  width: 480px;
+  height: 460px;
+  object-fit: cover;
+}
+.ellipse-icon-one-game1,
+.frame-icon-one-game1 {
+  position: absolute;
+  top: 680px;
+  left: 500px;
+  width: 150px;
+  height: 150px;
+}
+.frame-icon-one-game1 {
+  top: 690px;
+  left: 600px;
+  width: 120.86px;
+  height: 90.46px;
+  overflow: hidden;
+}
+.group-icon37-one-game1,
+.image-265-icon-one-game1 {
+  position: absolute;
+  top: 1000px;
+  left: 160px;
+  width: 500px;
+  height: 100px;
+}
+.image-265-icon-one-game1 {
+  top: 730px;
+  left: 570px;
+  width: 150.32px;
+  height: 150.32px;
+  object-fit: cover;
+}
+.ch1-14-one-game1 {
+  position: relative;
+  background-color: #2a2d34;
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-3xs);
+  color: var(--color-gray-700);
+  font-family: var(--font-noto-sans-kr);
+}

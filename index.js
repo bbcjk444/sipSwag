@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const bodyParser = require("body-parser");
 const PORT = process.env.port || 8008;
 const cors = require("cors");
@@ -16,49 +16,13 @@ let corsOptions = {
 
 app.use(cors(corsOptions));
 
-// 현호 개인 로컬 디비이니 사용자에 맞춰서 수정해주세요
-// 공용 DB 풀리면 바로 바꿀게요
 const db = mysql.createPool({
   host: "project-db-stu.ddns.net",
   user: "jsGame",
   password: "123456",
   database: "jsGame",
-});
-
-const multer = require("multer");
-const path = require("path");
-const fs = require("fs");
-
-try {
-  fs.readdirSync("userimgFolder");
-} catch (error) {
-  console.error("userimgFolder 폴더가 없어 userimgFolder 폴더를 생성합니다.");
-  fs.mkdirSync("userimgFolder");
-}
-
-const userimg_upload = multer({
-  storage: multer.diskStorage({
-    destination(req, file, done) {
-      done(null, "userimgFolder/");
-    },
-    filename(req, file, done) {
-      const ext = path.extname(file.originalname);
-      done(
-        null,
-        path.basename(
-          iconv.decode(file.originalname, "utf-8").toString(),
-          ext
-        ) +
-          Date.now() +
-          ext
-      );
-    },
-  }),
-  limits: { fileSize: 10 * 1024 * 1024 },
-});
-
-// 이미지가 저장된 경로를 static으로 지정하면 불러올 수 있다.
-app.use("/userimgFolder", express.static("userimgFolder"));
+  port: "3307",
+}); 
 
 app.post("/join", (req, res) => {
   console.log("/join", req.body);
@@ -165,67 +129,6 @@ app.post("/pwcheck", (req, res) => {
   });
 });
 
-//사용자 정보 수정
-app.post("/updateuser", userimg_upload.single("image"), (req, res) => {
-  // console.log('/updateuser', req.file, req.body);
-  var user_id = "";
-  var user_name = "";
-  var user_nick = "";
-  var user_tell = "";
-  var user_profile = "";
-
-  if (req.file === undefined) {
-    user_id = req.body.user_id;
-    user_name = req.body.user_name;
-    user_nick = req.body.user_nick;
-    user_tell = req.body.user_tell;
-    user_profile = req.body.image;
-  }
-  if (req.file !== undefined) {
-    user_id = req.body.user_id;
-    user_name = req.body.user_name;
-    user_nick = req.body.user_nick;
-    user_tell = req.body.user_tell;
-    user_profile = req.file.filename;
-  }
-
-  const sqlQuery =
-    "update user set user_name=?, user_nick=?, user_tell=?, user_profile=? where user_id=?;";
-  db.query(
-    sqlQuery,
-    [user_name, user_nick, user_tell, user_profile, user_id],
-    (err, result) => {
-      res.send(result);
-      console.log("result=", result);
-    }
-  );
-});
-
-//사용자비밀번호 수정
-app.post("/passwordupdate", (req, res) => {
-  console.log("/passwordupdate", req.body);
-  var user_id = req.body.user_id;
-  var user_pw = req.body.user_pw;
-
-  const sqlQuery = "update user set user_pass=? where user_id=?;";
-  db.query(sqlQuery, [user_pw, user_id], (err, result) => {
-    res.send(result);
-    console.log("result=", result);
-  });
-});
-
-//로그인한 사용자 정보 가져오기
-app.post("/user_login", (req, res) => {
-  console.log("/user_login", req.body);
-  var user_id = req.body.user_id;
-
-  const sqlQuery =
-    "select user_name, user_nick, user_tell, user_profile from user where user_id=?;";
-  db.query(sqlQuery, [user_id], (err, result) => {
-    res.send(result);
-  });
-});
-
 app.post("/getstory", (req, res) => {
   console.log("/getstory", req.body);
   var scenario_num = req.body.scenario_num;
@@ -238,6 +141,45 @@ app.post("/getstory", (req, res) => {
     console.log(result);
     res.send(result);
   });
+});
+
+app.post("/scecall", (req, res) => {
+  console.log("/scecall", req.body);
+  var scenario_num = req.body.scenario_num;
+  var chapter_num = req.body.chapter_num;
+  var scene_num = req.body.scene_num;
+  var speak_num = req.body.speak_num;
+
+  const sqlQuery =
+    "select speak_story from scenario where scenario_num=? and chapter_num=? and scene_num=? and speak_num=?;";
+  db.query(
+    sqlQuery,
+    [scenario_num, chapter_num, scene_num, speak_num],
+    (err, result) => {
+      console.log(result);
+      res.send(result);
+    }
+  );
+});
+
+app.post("/sceupdate", (req, res) => {
+  console.log("/sceupdate", req.body);
+  var scenario_num = req.body.scenario_num;
+  var chapter_num = req.body.chapter_num;
+  var scene_num = req.body.scene_num;
+  var speak_num = req.body.speak_num;
+  var speak_story = req.body.speak_story;
+
+  const sqlQuery =
+    "update scenario set speak_story=? where scenario_num=? and chapter_num=? and scene_num=? and speak_num=?;";
+  db.query(
+    sqlQuery,
+    [speak_story, scenario_num, chapter_num, scene_num, speak_num],
+    (err, result) => {
+      console.log(result);
+      res.send(result);
+    }
+  );
 });
 
 app.listen(PORT, () => {

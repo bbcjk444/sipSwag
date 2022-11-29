@@ -1,0 +1,61 @@
+.image-255-icon2-one-thirteen {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 840px;
+  height: 800px;
+  object-fit: cover;
+}
+.image-256-icon2-one-thirteen,
+.image-257-icon2-one-thirteen,
+.image-258-icon-one-thirteen,
+.image-259-icon2-one-thirteen {
+  top: 1115px;
+  left: 0px;
+  width: 900px;
+  height: 160px;
+}
+.image-257-icon2-one-thirteen,
+.image-258-icon2-one-thirteen,
+.image-259-icon2-one-thirteen {
+  top: 1052px;
+}
+.image-258-icon2-one-thirteen,
+.image-259-icon2-one-thirteen {
+  top: 988px;
+}
+.image-259-icon2-one-thirteen {
+  top: 92px;
+}
+.group-div2-one-thirteen,
+.vector-icon2-one-thirteen {
+  top: 0;
+  left: 0px;
+  width: 800px;
+  height: 700px;
+}
+.vector-icon2-one-thirteen {
+  height: 500px;
+  width: 100%;
+  top: 620px;
+  overflow: hidden;
+}
+.div8-one-thirteen {
+  position: absolute;
+  top: 850px;
+  left: 50px;
+  font-weight: 500;
+  font-size: 30px;
+  display: inline-block;
+}
+.ch1-13-one-thirteen {
+  position: relative;
+  background-color: var(--color-gray-500);
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-noto-sans-kr);
+}

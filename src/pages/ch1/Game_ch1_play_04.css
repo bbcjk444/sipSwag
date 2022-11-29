@@ -1,0 +1,143 @@
+.icon1 {
+  position: absolute;
+  height: 118.09%;
+  width: 105.48%;
+  top: 0;
+  right: -5.48%;
+  bottom: -18.09%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.rectangle-div11 {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  border-radius: var(--br-lg);
+  background-color: #fff;
+  width: 385px;
+  height: 388px;
+}
+.group-icon3 {
+  position: absolute;
+  top: 555px;
+  left: 12px;
+  width: 362px;
+  height: 50px;
+}
+.group-icon4,
+.group-icon5,
+.vector-icon1 {
+  position: absolute;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-icon4 {
+  height: 9.11%;
+  width: 79.45%;
+  top: -0.83%;
+  right: 9.09%;
+  bottom: 91.72%;
+  left: 11.46%;
+  opacity: 0.94;
+}
+.group-icon5,
+.vector-icon1 {
+  height: 7.46%;
+  width: 76.85%;
+  top: 0;
+  right: 10.39%;
+  bottom: 92.54%;
+  left: 12.76%;
+}
+.vector-icon1 {
+  height: 2.31%;
+  width: 6.75%;
+  top: 0.07%;
+  right: 89.87%;
+  bottom: 97.62%;
+  left: 3.38%;
+}
+.rectangle-div12,
+.rectangle-div13,
+.rectangle-div14 {
+  position: absolute;
+  top: 151px;
+  left: 22px;
+  background-color: #a6f0e8;
+  width: 106px;
+  height: 106px;
+}
+.rectangle-div13,
+.rectangle-div14 {
+  top: 271px;
+}
+.rectangle-div14 {
+  top: 391px;
+}
+.rectangle-div15,
+.rectangle-div16,
+.rectangle-div17,
+.rectangle-div18,
+.rectangle-div19,
+.rectangle-div20 {
+  position: absolute;
+  top: 151px;
+  left: 140px;
+  background-color: #a6f0e8;
+  width: 106px;
+  height: 106px;
+}
+.rectangle-div16,
+.rectangle-div17,
+.rectangle-div18,
+.rectangle-div19,
+.rectangle-div20 {
+  top: 271px;
+}
+.rectangle-div17,
+.rectangle-div18,
+.rectangle-div19,
+.rectangle-div20 {
+  top: 391px;
+}
+.rectangle-div18,
+.rectangle-div19,
+.rectangle-div20 {
+  top: 151px;
+  left: 259px;
+}
+.rectangle-div19,
+.rectangle-div20 {
+  top: 271px;
+}
+.rectangle-div20 {
+  top: 391px;
+}
+.div1 {
+  position: absolute;
+  top: 60px;
+  left: 21px;
+  display: inline-block;
+}
+.group-div1 {
+  position: absolute;
+  top: 55px;
+  left: 17px;
+  width: 385px;
+  height: 605px;
+}
+.ch1-11 {
+  position: relative;
+  background-color: #52d2c4;
+  width: 100%;
+  height: 724px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: #2a2d34;
+  font-family: "Noto Sans KR";
+}
