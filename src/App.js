@@ -4,6 +4,11 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import Join from "./join";
+import Login from "./Login";
+import FindID from "./findID";
+import FindPW from "./findPW";
+import UpdateUser from "./UpdateUser";
 import Main_01 from "./pages/ch1/Main_01";
 import Main_02 from "./pages/ch1/Main_02";
 import Ch1_Start from "./pages/ch1/Story_ch1_start";
@@ -33,7 +38,7 @@ import Ch1_game_result2 from "./pages/ch1/Game_ch1_result_02";
 import Ch1_game_result3 from "./pages/ch1/Game_ch1_result_03";
 import Ch1_game_clear from "./pages/ch1/Game_clear";
 import Ch1_Clear from "./pages/ch1/Story_ch1_clear";
-import Game1 from "./pages/ch1/game1/OneToFifty"
+import Game1 from "./pages/ch1/game1/OneToFifty";
 import { useEffect } from "react";
 
 function App() {
@@ -98,6 +103,16 @@ function App() {
       <Route path="/ch1gameclear" element={<Ch1_game_clear />} />
 
       <Route path="/ch1clear" element={<Ch1_Clear />} />
+
+      <Route path="/join" element={<Join />} />
+
+      <Route path="/UpdateUser" element={<UpdateUser />} />
+
+      <Route path="/login" element={<Login />} />
+
+      <Route path="/findID" element={<FindID />} />
+
+      <Route path="/findPW" element={<FindPW />} />
     </Routes>
   );
 }
