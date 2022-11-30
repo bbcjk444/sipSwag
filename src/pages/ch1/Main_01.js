@@ -16,6 +16,10 @@ const Main_01 = () => {
     navigate("/main02");
   };
 
+  const admin = () => {
+    navigate('/sceup');
+  }
+
   if (sessionStorage.getItem("id") === null) {
     return (
       <div className="div-main1">
@@ -36,7 +40,7 @@ const Main_01 = () => {
         <img className="group-icon-main51" alt="" src="../Group 334.png" />
       </div>
     );
-  } else if (sessionStorage.getItem("id") !== null) {
+  } else if (sessionStorage.getItem("id") !== null && sessionStorage.getItem('admin') === '0') {
     return (
       <div className="div-main1">
         <div className="group-div-main1">
@@ -54,6 +58,18 @@ const Main_01 = () => {
         />
 
         <img className="group-icon-main51" alt="" src="../Group 334.png" />
+      </div>
+    );
+  } else if(sessionStorage.getItem('id') !== null && sessionStorage.getItem('admin') === '1'){
+    return (
+      <div className="div-main1">
+        <div className="group-div-main1">
+          <img className="image-232-icon-main" alt="" src="../image-232@2x.png" />
+        </div>
+        <img className="group-icon-main55" alt="" src="../group-3541.svg" onClick={genderselect}/>
+        <img className="group-icon-main56" alt="" src="../Rectangle 377.png" onClick={admin}/>
+        <img className="group-icon-main57" alt="" src="../admin.png" onClick={admin}/>
+        <img className="group-icon-main58" alt="" src="../Group 334.png" />
       </div>
     );
   }

@@ -76,9 +76,9 @@ app.post("/login", (req, res) => {
   var pw = req.body.pw;
 
   const sqlQuery =
-    "select user_name from user where user_id=? and user_pass=?;";
+    "select admin from user where user_id=? and user_pass=?;";
   db.query(sqlQuery, [id, pw], (err, result) => {
-    console.log("이름 확인 => " + result);
+    console.log("관리자 여부 => " + result);
     res.send(result);
   });
 });

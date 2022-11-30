@@ -38,10 +38,10 @@ const Login = ({ modal, openModal }) => {
         pw: pwRef.current.value,
       })
       .then((res) => {
-        console.log("handleLogin =>", res.data[0].user_name);
+        console.log("handleLogin =>", res.data[0].admin);
         if (res.data[0] !== undefined) {
-          window.sessionStorage.setItem("name", res.data[0].user_name);
-          console.log("로페 이름 확인 => " + sessionStorage.getItem("name"));
+          window.sessionStorage.setItem("admin", res.data[0].admin);
+          console.log("로페 관리자여부 확인 => " + sessionStorage.getItem("admin"));
           window.sessionStorage.setItem("id", idRef.current.value);
           alert("세션: " + window.sessionStorage.getItem("id"));
         } else {
