@@ -39,6 +39,7 @@ import Ch1_game_result3 from "./pages/ch1/Game_ch1_result_03";
 import Ch1_game_clear from "./pages/ch1/Game_clear";
 import Ch1_Clear from "./pages/ch1/Story_ch1_clear";
 import Game1 from "./pages/ch1/game1/OneToFifty";
+import Result from "./result";
 import { useEffect } from "react";
 
 function App() {
@@ -113,6 +114,8 @@ function App() {
       <Route path="/findID" element={<FindID />} />
 
       <Route path="/findPW" element={<FindPW />} />
+
+      <Route path="/result" element={<Result />} />
     </Routes>
   );
 }

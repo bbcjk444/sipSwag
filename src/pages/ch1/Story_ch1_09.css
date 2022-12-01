@@ -1,12 +1,12 @@
 .image-262-icon-one-nine {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: -15px;
   width: 840px;
   height: 1180px;
   object-fit: cover;
 }
-.rectangle-div66-one-nine{
+.rectangle-div66-one-nine {
   position: absolute;
   top: 760px;
   left: 180px;
@@ -17,11 +17,11 @@
 }
 .b4-one-nine,
 .b5-one-nine,
-.div30-one-nine{
+.div30-one-nine {
   position: absolute;
   display: inline-block;
 }
-.b4-one-nine{
+.b4-one-nine {
   position: absolute;
   top: 620px;
   left: 290px;
@@ -49,7 +49,7 @@
 .group-icon36-one-nine {
   position: absolute;
   top: 1060px;
-  left: 210px;
+  left: 150px;
   height: 80px;
 }
 .ch1-9-one-nine {
