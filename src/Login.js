@@ -56,6 +56,21 @@ const Login = ({ modal, openModal }) => {
       .catch((e) => {
         console.error(e);
       });
+
+      axios
+      .post("http://localhost:8008/graph", {
+        id: idRef.current.value
+      })
+      .then((res) => {
+        console.log("handlgraph =>", res.data[0]);
+        sessionStorage.setItem("alacrity", res.data[0].alacrity);
+        sessionStorage.setItem("observation", res.data[0].observation);
+        sessionStorage.setItem("logical", res.data[0].logical);
+        sessionStorage.setItem("ability", res.data[0].ability);
+      })
+      .catch((e) => {
+        console.error(e);
+      });
   };
 
   const findID = () => {
