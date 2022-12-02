@@ -76,12 +76,24 @@ app.post("/login", (req, res) => {
   var pw = req.body.pw;
 
   const sqlQuery =
-    "select user_name from user where user_id=? and user_pass=?;";
+    "select admin from user where user_id=? and user_pass=?;";
   db.query(sqlQuery, [id, pw], (err, result) => {
-    console.log("이름 확인 => " + result);
+    console.log("관리자 여부 => " + result);
     res.send(result);
   });
 });
+
+app.post("/graph", (req, res) => {
+  console.log("/graph", req.body);
+  var id = req.body.id;
+
+  const sqlQuery = 
+    "select floor(avg(alacrity)) as alacrity, floor(avg(observation)) as observation,"+
+    "floor(avg(logical)) as logical, floor(avg(ability)) as ability from accrue where user_id=?;"; 
+  db.query(sqlQuery, [id], (err, result) => {
+    res.send(result);
+  })
+})
 
 app.post("/userdelete", (req, res) => {
   console.log("/userdelete", req.body);

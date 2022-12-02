@@ -29,6 +29,36 @@
   bottom: 72.98%;
   left: 13.33%;
 }
+.group-icon-main55,
+.group-icon-main58 {
+  position: absolute;
+  top: 1050px;
+  left: -350px;
+  height: 60px;
+  width: 1150px;
+}
+.group-icon-main58 {
+  height: 18.87%;
+  width: 72.08%;
+  top: 3.15%;
+  right: 14.59%;
+  bottom: 72.98%;
+  left: 13.33%;
+}
+.group-icon-main56 {
+  position: absolute;
+  top: 1050px;
+  left: 410px;
+  height: 60px;
+  width: 360px;
+}
+.group-icon-main57 {
+  position: absolute;
+  top: 1050px;
+  left: 530px;
+  height: 60px;
+  width: 120px;
+}
 .div-main1 {
   position: relative;
   background-color: #52d2c4;

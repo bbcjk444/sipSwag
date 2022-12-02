@@ -1,7 +1,10 @@
 import "./result.css";
 import Haxagon from "./hexagon";
+import styled from "styled-components";
+import React, { useEffect } from "react";
+import Kakao from "./kakao";
 
-const result = () => {
+function result() {
   return (
     <div className="div">
       <div className="group-div">
@@ -127,14 +130,17 @@ const result = () => {
       <div className="div27">처음부터 다시 하기</div>
       <div className="rectangle-div10" />
       <div className="rectangle-div11" />
-      <div className="div28">친구에게 공유하기</div>
+      <div className="div28">
+        {/* 친구에게 공유하기 */}
+        <Kakao />
+      </div>
       <div className="div29">동아리하러 가기</div>
-      {/* <img className="group-icon" alt="" src="../group-hexagon.svg" /> */}
+
       <div className="div15">
         <Haxagon />
       </div>
     </div>
   );
-};
+}
 
 export default result;

@@ -11,27 +11,23 @@ import {
 function Haxagon() {
   const data = [
     {
-      subject: "관찰",
-      A: 15,
-      B: 15,
+      subject: "순발",
+      A: sessionStorage.getItem("alacrity"),
       fullMark: 100,
     },
     {
       subject: "사고",
-      A: 98,
-      B: 13,
+      A: sessionStorage.getItem("ability"),
       fullMark: 100,
     },
     {
-      subject: "통찰",
-      A: 86,
-      B: 13,
+      subject: "관찰",
+      A: sessionStorage.getItem("observation"),
       fullMark: 100,
     },
     {
-      subject: "이해",
-      A: 99,
-      B: 100,
+      subject: "논리",
+      A: sessionStorage.getItem("logical"),
       fullMark: 100,
     },
     // {
@@ -60,15 +56,7 @@ function Haxagon() {
       <PolarGrid />
       <PolarAngleAxis dataKey="subject" />
       <PolarRadiusAxis angle={0} domain={[0, 100]} />
-      <Radar
-        name="Mike"
-        dataKey="A"
-        stroke="#8884d8"
-        fill="#8884d8"
-        fillOpacity={0.4}
-      />
-
-      <Legend />
+      <Radar dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.4} />
     </RadarChart>
   );
 }

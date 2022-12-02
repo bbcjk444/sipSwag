@@ -12,12 +12,12 @@
 }
 .rectangle-div {
   top: 115px;
-  left: 140px;
+  left: 226px;
   border-radius: 28px;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  width: 582px;
-  height: 482px;
+  width: 420px;
+  height: 462px;
 }
 .image-245-icon {
   position: absolute;
@@ -100,20 +100,20 @@
   position: absolute;
   top: 0;
   margin-bottom: 30px;
-  left: 30px;
+  left: 15px;
   border-radius: var(--br-md);
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  width: 148px;
+  width: 108px;
   height: 162px;
 }
 .rectangle-div2,
 .rectangle-div3 {
-  left: 145px;
+  left: 148px;
 }
 .rectangle-div3,
 .rectangle-div4 {
-  left: 290px;
+  left: 283px;
 }
 .rectangle-div4 {
   top: 1px;
@@ -125,21 +125,21 @@
 .div9 {
   position: absolute;
   top: 129px;
-  left: 23px;
+  left: 29px;
   line-height: 128.8%;
   font-weight: 500;
   display: inline-block;
-  width: 81px;
-  height: 11px;
+  width: 80px;
+  height: 12px;
 }
 .div10,
 .div8,
 .div9 {
-  left: 169px;
+  left: 160px;
 }
 .div10,
 .div9 {
-  left: 314px;
+  left: 300px;
 }
 .div10 {
   top: 130px;
@@ -161,7 +161,7 @@
 .div14 {
   position: absolute;
   top: 90px;
-  left: 23px;
+  left: 28px;
   line-height: 145.3%;
   display: inline-block;
   width: 81px;
@@ -171,11 +171,11 @@
 .div12,
 .div13,
 .div14 {
-  left: 169px;
+  left: 159px;
 }
 .div13,
 .div14 {
-  left: 314px;
+  left: 298px;
 }
 .div14 {
   top: 91px;
@@ -186,8 +186,8 @@
 .mask-group-icon2,
 .mask-group-icon3 {
   position: absolute;
-  top: 15px;
-  left: 28px;
+  top: 13px;
+  left: 31.5px;
   width: 74px;
   height: 74px;
   object-fit: cover;
@@ -195,11 +195,12 @@
 .mask-group-icon1,
 .mask-group-icon2,
 .mask-group-icon3 {
-  left: 173px;
+  left: 165px;
+  top: 13px;
 }
 .mask-group-icon2,
 .mask-group-icon3 {
-  left: 318px;
+  left: 303px;
 }
 .mask-group-icon3 {
   top: 687px;
@@ -209,8 +210,8 @@
 }
 .group-div1 {
   position: absolute;
-  top: 669px;
-  left: 132px;
+  top: 678px;
+  left: 226px;
   width: 562px;
   height: 160px;
   font-size: var(--font-size-base);
@@ -343,12 +344,12 @@
 .rectangle-div9 {
   position: absolute;
   top: 1660px;
-  left: 272px;
+  left: 270px;
   border-radius: 11.5px;
   height: 22px;
 }
 .rectangle-div8 {
-  background-color: #000;
+  background-color: #fff;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
   border: 0.2px solid #d9d9d9;
   box-sizing: border-box;
@@ -499,8 +500,8 @@
 .div {
   position: relative;
   background-color: #52d2c4;
-  width: 840px;
-  height: 1980px;
+  width: 820px;
+  height: 1920px;
   overflow: hidden;
   text-align: center;
   font-size: 15px;
