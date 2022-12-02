@@ -3,6 +3,7 @@ import Haxagon from "./hexagon";
 import styled from "styled-components";
 import React, { useEffect } from "react";
 import Kakao from "./kakao";
+import Slides from "./Slides";
 
 function result() {
   return (
@@ -36,7 +37,8 @@ function result() {
           <span>자세하게 나타내보았어요.</span>
         </p>
       </div>
-      <div className="group-div1">
+      <Slides />
+      {/* <div className="group-div1">
         <div className="rectangle-div1" />
         <div className="rectangle-div2" />
         <div className="rectangle-div3" />
@@ -71,7 +73,7 @@ function result() {
         <img className="mask-group-icon1" alt="" src="../mask-group1.png" />
         <img className="mask-group-icon2" alt="" src="../mask-group2.png" />
         <img className="mask-group-icon3" alt="" src="../mask-group3.png" />
-      </div>
+      </div> */}
       <div className="rectangle-div5" />
       <div className="div17">
         <p className="p">
