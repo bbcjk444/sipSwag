@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 const Story_ch1_clear = () => {
   const navigate = useNavigate();
 
+  const nextstory = () => {
+    navigate('/ch2start');
+  }
+
   return (
     <div className="ch1-clear-one-final">
       <img className="icon-one-final" alt="" src="../-17-1@2x.png" />
@@ -17,18 +21,18 @@ const Story_ch1_clear = () => {
         <p className="p-one-final">어떤 일들이 날 기다리고 있을까!</p>
         <p className="p3-one-final">너무 설레고 긴장된다😆</p>
       </div>
-      <div className="rectangle-div1-one-final" />
+      <div className="rectangle-div1-one-final" onClick={nextstory}/>
       <img
         className="group-icon1-one-final"
         alt=""
         src="../Group-icon1-two.png"
-        // onClick={nextstory}
       />
       <img className="group-icon2-one-final" alt="" src="../group-353.svg" />
       <img
         className="group-icon3-one-final"
         alt=""
         src="../Group-icon3-two.png"
+        onClick={nextstory}
       />
     </div>
   );

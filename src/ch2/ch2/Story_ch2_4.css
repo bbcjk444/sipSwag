@@ -1,0 +1,56 @@
+.image-261-icon6-two-four {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 840px;
+  height: 800px;
+  object-fit: cover;
+}
+.group-div17-two-four,
+.vector-icon5-two-four{
+  top: 0;
+  left: 0px;
+  width: 800px;
+  height: 700px;
+}
+.vector-icon5-two-four {
+  height: 500px;
+  width: 100%;
+  top: 620px;
+  right: 0px;
+  overflow: hidden;
+}
+.div35-two-four {
+  position: absolute;
+  top: 830px;
+  left: 50px;
+  font-weight: 500;
+  font-size: 30px;
+  display: inline-block;
+}
+.p53-two-four {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.p54-two-four {
+  margin: 0;
+}
+.div36-two-four {
+  position: absolute;
+  top: 900px;
+  left: 50px;
+  font-weight: 500;
+  font-size: 30px;
+  display: inline-block;
+}
+.ch1-121-two-four {
+  position: relative;
+  background-color: var(--color-gray-500);
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-noto-sans-kr);
+}

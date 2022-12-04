@@ -14,7 +14,7 @@ const Story_ch1_12 = () => {
   return (
     <div className="ch1-121-one-twelve">
       <div className="group-div17-one-twelve">
-        <img className="image-261-icon6-one-twelve" alt="" src="../image-2614@2x.png" />
+        <img className="image-261-icon6-one-twelve" alt="" src="../스토리1 책상.jpg" />
       </div>
       <img className="vector-icon5-one-twelve" alt="" src="../vector5.svg" onClick={nextstory}/>
       <div className="div35-one-twelve" onClick={nextstory}>{user_name}</div>

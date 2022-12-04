@@ -1,10 +1,11 @@
-import "./Game_clear.css";
+import "./Ch2_Game_clear.css";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-const Game_clear = () => {
+const Ch2_Game_clear = () => {
 
-  var star = sessionStorage.getItem('star');
+  var star2 = sessionStorage.getItem('star2');
+  console.log(star2);
 
   const navigate = useNavigate();
 
@@ -26,15 +27,15 @@ const Game_clear = () => {
   }
 
   return (
-    <div className="ch1-1-game1clear">
-      <img className="image-261-icon4-game1clear" alt="" src="../image-2612@2x.png" />
-      <img className="game1-icon-game1clear" id="star" alt="" src={star} />
-      <div className="group-div14-game1clear" onClick={nextstory}>
-        <div className="rectangle-div14-game1clear" onClick={nextstory}/>
+    <div className="ch1-1-game2clear">
+      <img className="image-261-icon4-game2clear" alt="" src="../image 273-1.png" />
+      <img className="game2-icon-game2clear" id="star" alt="" src={star2} />
+      <div className="group-div14-game2clear" onClick={nextstory}>
+        <div className="rectangle-div14-game2clear" onClick={nextstory}/>
       </div>
-      <img className="frame-icon-game1clear" alt="" src="../frame.svg" onClick={nextstory}/>
+      <img className="frame-icon-game2clear" alt="" src="../frame.svg" onClick={nextstory}/>
     </div>
   );
 };
 
-export default Game_clear;
+export default Ch2_Game_clear;

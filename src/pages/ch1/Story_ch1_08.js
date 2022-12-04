@@ -11,7 +11,7 @@ const Story_ch1_08 = () => {
 
   return (
     <div className="ch1-8-one-eight">
-      <img className="image-261-icon4-one-eight" alt="" src="../image-2614@2x.png" />
+      <img className="image-261-icon4-one-eight" alt="" src="../스토리1 책상 지갑.jpg" />
       <div className="test" onClick={nextstory}></div>
     </div>
   );

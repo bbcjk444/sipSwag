@@ -1,0 +1,51 @@
+.image-261-icon4-game2clear {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1180px;
+  object-fit: cover;
+}
+.game2-icon-game2clear {
+  position: absolute;
+  overflow: hidden;
+  height: 650px;
+  width: 750px;
+  margin-left: 35px;
+  margin-top: 200px;
+}
+.rectangle-div14-game2clear,
+.game2-icon-gameclear {
+  left: 264px;
+}
+.rectangle-div14-game2clear {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-lg);
+  background-color: #31B2A3;
+  width: 600px;
+  height: 100px;
+  margin-left: -90px;
+}
+.frame-icon-game2clear,
+.group-div14-game2clear {
+  position: absolute;
+  top: 930px;
+  left: 210px;
+  width: 300px;
+  height: 48px;
+}
+.frame-icon-game2clear {
+  top: 930px;
+  left: 360px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.ch1-1-game2clear {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1180px;
+  overflow: hidden;
+}

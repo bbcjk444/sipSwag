@@ -8,13 +8,13 @@ const Game_ch1_result_03 = () => {
   const navigate = useNavigate();
   
   const nextstory = () => {
-    window.sessionStorage.setItem('star', '../game1-onestar.png')
+    window.sessionStorage.setItem('star1', '../game1-onestar.png')
     navigate('/ch1gameclear')
   }
   return (
     <div className="ch1-1-3490-one-result3">
       <div className="group-div19-one-result3">
-        <img className="image-261-icon2-one-result3" alt="" src="../image-2612@2x.png" />
+        <img className="image-261-icon2-one-result3" alt="" src="../스토리1 책상.jpg" />
       </div>
       <img className="vector-icon3-one-result3" alt="" src="../vector3.svg" onClick={nextstory}/>
       <div className="div23-one-result3" onClick={nextstory}>{user_name}</div>

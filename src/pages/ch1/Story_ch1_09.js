@@ -15,7 +15,8 @@ const Story_ch1_09 = () => {
 
   return (
     <div className="ch1-9-one-nine">
-    <img className="image-262-icon-one-nine" alt="" src="../image-262@2x.png" />
+    <img className="image-262-icon-one-nine" alt="" src="../스토리1 책상.jpg" />
+    <img className="group-icon34-one-nine" alt="" src="../group8.svg" />
       <div className="rectangle-div66-one-nine" />
       <b className="b4-one-nine">닉네임을 입력하세요</b>
       <input className="b5-one-nine" type="text" size="10" maxLength="5" ref={user_nameRef}></input>

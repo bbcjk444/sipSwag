@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Story_ch1_11 = () => {
 
   var user_name = sessionStorage.getItem('user_name');
-  var department = sessionStorage.getItem('department');
+  var department1 = sessionStorage.getItem('department1');
 
   const navigate = useNavigate();
 
@@ -32,7 +32,7 @@ const Story_ch1_11 = () => {
   return (
     <div className="ch1-111-one-eleven">
       <div className="group-div16-one-eleven">
-        <img className="image-261-icon7-one-eleven" alt="" src="../image-2614@2x.png" />
+        <img className="image-261-icon7-one-eleven" alt="" src="../스토리1 책상.jpg" />
       </div>
       <img className="vector-icon6-one-eleven" alt="" src="../vector6.svg" onClick={nextstory}/>
       <div className="div37-one-eleven" onClick={nextstory}>
@@ -40,9 +40,9 @@ const Story_ch1_11 = () => {
         <p className="p56-one-eleven" id="story 1-11-2" onClick={nextstory}></p>
       </div>
       <img className="group-icon38-one-eleven" alt="" src="../group29.svg" />
-      <img className="group-icon39-one-eleven" alt="" src="../group30.svg" />
+      <img className="group-icon39-one-eleven" alt="" src="../작은 마쿠.png" />
       <b className="b6-one-eleven">{user_name}</b>
-      <b className="b7-one-eleven">{department}</b>
+      <b className="b7-one-eleven">{department1}</b>
       <div className="inssamacu-div-one-eleven">2023INSSAMACU</div>
     </div>
   );

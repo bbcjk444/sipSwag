@@ -36,10 +36,42 @@ import Ch1_Game5 from "./pages/ch1/Game_ch1_play_05";
 import Ch1_game_result1 from "./pages/ch1/Game_ch1_result_01";
 import Ch1_game_result2 from "./pages/ch1/Game_ch1_result_02";
 import Ch1_game_result3 from "./pages/ch1/Game_ch1_result_03";
-import Ch1_game_clear from "./pages/ch1/Game_clear";
+import Ch1_game_clear from "./pages/ch1/Ch1_Game_clear";
 import Ch1_Clear from "./pages/ch1/Story_ch1_clear";
 import Game1 from "./pages/ch1/game1/OneToFifty";
 import Result from "./result";
+import Ch2_Start from "./ch2/ch2/Story_ch2_start"; 
+import Ch2_Story1 from "./ch2/ch2/Story_ch2_1";
+import Ch2_Story2 from "./ch2/ch2/Story_ch2_2";
+import Ch2_Story3 from "./ch2/ch2/Story_ch2_3";
+import Ch2_Story4 from "./ch2/ch2/Story_ch2_4";
+import Ch2_Story5 from "./ch2/ch2/Story_ch2_5";
+import Ch2_Story6 from "./ch2/ch2/Story_ch2_6";
+import Ch2_Story7 from "./ch2/ch2/Story_ch2_7";
+import Ch2_Story8 from "./ch2/ch2/Story_ch2_8";
+import Ch2_Story9 from "./ch2/ch2/Story_ch2_9";
+import Ch2_Story10 from "./ch2/ch2/Story_ch2_10";
+import Ch2_Story11 from "./ch2/ch2/Story_ch2_11";
+import Ch2_Story12 from "./ch2/ch2/Story_ch2_12";
+import Ch2_Story13 from "./ch2/ch2/Story_ch2_13";
+import Ch2_Story14 from "./ch2/ch2/Story_ch2_14";
+import Ch2_Story15 from "./ch2/ch2/Story_ch2_15";
+import Ch2_Story16 from "./ch2/ch2/Story_ch2_16";
+import Ch2_Story17 from "./ch2/ch2/Story_ch2_17";
+import Ch2_Story18 from "./ch2/ch2/Story_ch2_18";
+import Ch2_Story19 from "./ch2/ch2/Story_ch2_19";
+import Ch2_Story20 from "./ch2/ch2/Story_ch2_20";
+import Ch2_Story21 from "./ch2/ch2/Story_ch2_21";
+import Ch2_Story22 from "./ch2/ch2/Story_ch2_22";
+import Ch2_Story23 from "./ch2/ch2/Story_ch2_23";
+import Ch2_Story24 from "./ch2/ch2/Story_ch2_24";
+import Ch2_Story25 from "./ch2/ch2/Story_ch2_25";
+import Ch2_Story26 from "./ch2/ch2/Story_ch2_26";
+import Ch2_game_result1 from "./ch2/ch2/Game_ch2_result_01";
+import Ch2_game_result2 from "./ch2/ch2/Game_ch2_result_02";
+import Ch2_game_result3 from "./ch2/ch2/Game_ch2_result_03";
+import Ch2_game_clear from "./ch2/ch2/Ch2_Game_clear";
+import Ch2_Clear from "./ch2/ch2/Story_ch2_clear";
 import { useEffect } from "react";
 
 function App() {
@@ -116,6 +148,71 @@ function App() {
       <Route path="/findPW" element={<FindPW />} />
 
       <Route path="/result" element={<Result />} />
+
+      <Route path="/ch2start" element={<Ch2_Start />} />
+
+      <Route path="/ch2story1" element={<Ch2_Story1 />} />
+
+      <Route path="/ch2story2" element={<Ch2_Story2 />} />
+
+      <Route path="/ch2story3" element={<Ch2_Story3 />} />
+
+      <Route path="/ch2story4" element={<Ch2_Story4 />} />
+
+      <Route path="/ch2story5" element={<Ch2_Story5 />} />
+
+      <Route path="/ch2story6" element={<Ch2_Story6 />} />
+
+      <Route path="/ch2story7" element={<Ch2_Story7 />} />
+
+      <Route path="/ch2story8" element={<Ch2_Story8 />} />
+
+      <Route path="/ch2story9" element={<Ch2_Story9 />} />
+
+      <Route path="/ch2story10" element={<Ch2_Story10 />} />
+
+      <Route path="/ch2story11" element={<Ch2_Story11 />} />
+
+      <Route path="/ch2story12" element={<Ch2_Story12 />} />
+
+      <Route path="/ch2story13" element={<Ch2_Story13 />} />
+
+      <Route path="/ch2story14" element={<Ch2_Story14 />} />
+
+      <Route path="/ch2story15" element={<Ch2_Story15 />} />
+
+      <Route path="/ch2story16" element={<Ch2_Story16 />} />
+
+      <Route path="/ch2story17" element={<Ch2_Story17 />} />
+
+      <Route path="/ch2story18" element={<Ch2_Story18 />} />
+
+      <Route path="/ch2story19" element={<Ch2_Story19 />} />
+
+      <Route path="/ch2story20" element={<Ch2_Story20 />} />
+
+      <Route path="/ch2story21" element={<Ch2_Story21 />} />
+
+      <Route path="/ch2story22" element={<Ch2_Story22 />} />
+
+      <Route path="/ch2story23" element={<Ch2_Story23 />} />
+
+      <Route path="/ch2story24" element={<Ch2_Story24 />} />
+
+      <Route path="/ch2story25" element={<Ch2_Story25 />} />
+
+      <Route path="/ch2story26" element={<Ch2_Story26 />} />
+
+      <Route path="/ch2result1" element={<Ch2_game_result1 />} />
+
+      <Route path="/ch2result2" element={<Ch2_game_result2 />} />
+
+      <Route path="/ch2result3" element={<Ch2_game_result3 />} />
+
+      <Route path="/ch2gameclear" element={<Ch2_game_clear />} />
+
+      <Route path="/ch2clear" element={<Ch2_Clear />} />
+
     </Routes>
   );
 }

@@ -12,7 +12,7 @@ const Story_ch1_07 = () => {
   return (
     <div className="ch1-7-one-seven">
       <div className="group-div15-one-seven">
-        <img className="image-261-icon8-one-seven" alt="" src="../image-2614@2x.png" />
+        <img className="image-261-icon8-one-seven" alt="" src="../스토리1 책상.jpg" />
       </div>
       <img className="vector-icon7-one-seven" alt="" src="../vector7.svg" onClick={nextstory}/>
       <div className="div38-one-seven" onClick={nextstory}>

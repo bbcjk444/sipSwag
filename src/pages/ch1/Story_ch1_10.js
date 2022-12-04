@@ -11,7 +11,7 @@ const Story_ch1_10_1_1 = () => {
   const navigate = useNavigate();
 
   const select_one = () => {
-    window.sessionStorage.setItem('department', '공연전시마스터학과');
+    window.sessionStorage.setItem('department1', '공연전시마스터학과');
     document.getElementsByClassName('rectangle-div60-one-ten')[0].style.backgroundColor = "#147176";
     document.getElementsByClassName('rectangle-div61-one-ten')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div62-one-ten')[0].style.backgroundColor = "#D9D9D9";
@@ -32,7 +32,7 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-six-two').style.color = "black";
   }
   const select_two = () => {
-    window.sessionStorage.setItem('department', '탐구발명천재학과');
+    window.sessionStorage.setItem('department1', '탐구발명천재학과');
     document.getElementsByClassName('rectangle-div60-one-ten')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div61-one-ten')[0].style.backgroundColor = "#147176";
     document.getElementsByClassName('rectangle-div62-one-ten')[0].style.backgroundColor = "#D9D9D9";
@@ -53,7 +53,7 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-six-two').style.color = "black";
   }
   const select_three = () => {
-    window.sessionStorage.setItem('department', '세계공인인싸학과');
+    window.sessionStorage.setItem('department1', '세계공인인싸학과');
     document.getElementsByClassName('rectangle-div60-one-ten')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div61-one-ten')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div62-one-ten')[0].style.backgroundColor = "#147176";
@@ -74,7 +74,7 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-six-two').style.color = "black";
   }
   const select_four = () => {
-    window.sessionStorage.setItem('department', 'CEO리더멋쟁이학과');
+    window.sessionStorage.setItem('department1', 'CEO리더멋쟁이학과');
     document.getElementsByClassName('rectangle-div60-one-ten')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div61-one-ten')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div62-one-ten')[0].style.backgroundColor = "#D9D9D9";
@@ -95,7 +95,7 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-six-two').style.color = "black";
   }
   const select_five = () => {
-    window.sessionStorage.setItem('department', '특수요원양성학과');
+    window.sessionStorage.setItem('department1', '특수요원양성학과');
     document.getElementsByClassName('rectangle-div60-one-ten')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div61-one-ten')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div62-one-ten')[0].style.backgroundColor = "#D9D9D9";
@@ -116,7 +116,7 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-six-two').style.color = "black";
   }
   const select_six = () => {
-    window.sessionStorage.setItem('department', '공직자다이렉트과');
+    window.sessionStorage.setItem('department1', '공직자다이렉트과');
     document.getElementsByClassName('rectangle-div60-one-ten')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div61-one-ten')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div62-one-ten')[0].style.backgroundColor = "#D9D9D9";
@@ -152,17 +152,17 @@ const Story_ch1_10_1_1 = () => {
       window.sessionStorage.setItem('scence 1-11-4', JSON.stringify(res.data[3].speak_story).substring(1,JSON.stringify(res.data[3].speak_story).length-1));
       window.sessionStorage.setItem('scence 1-11-5', JSON.stringify(res.data[4].speak_story).substring(1,JSON.stringify(res.data[4].speak_story).length-1));
       window.sessionStorage.setItem('scence 1-11-6', JSON.stringify(res.data[5].speak_story).substring(1,JSON.stringify(res.data[5].speak_story).length-1));
-      if(sessionStorage.getItem('department') === '공연전시마스터학과'){
+      if(sessionStorage.getItem('department1') === '공연전시마스터학과'){
         document.getElementById('story 1-11-2').innerText = sessionStorage.getItem('scence 1-11-1');
-      }else if(sessionStorage.getItem('department') === '탐구발명천재학과'){
+      }else if(sessionStorage.getItem('department1') === '탐구발명천재학과'){
         document.getElementById('story 1-11-2').innerText = sessionStorage.getItem('scence 1-11-2');
-      }else if(sessionStorage.getItem('department') === '세계공인인싸학과'){
+      }else if(sessionStorage.getItem('department1') === '세계공인인싸학과'){
         document.getElementById('story 1-11-2').innerText = sessionStorage.getItem('scence 1-11-3');
-      }else if(sessionStorage.getItem('department') === 'CEO리더멋쟁이학과'){
+      }else if(sessionStorage.getItem('department1') === 'CEO리더멋쟁이학과'){
         document.getElementById('story 1-11-2').innerText = sessionStorage.getItem('scence 1-11-4');
-      }else if(sessionStorage.getItem('department') === '특수요원양성학과'){
+      }else if(sessionStorage.getItem('department1') === '특수요원양성학과'){
         document.getElementById('story 1-11-2').innerText = sessionStorage.getItem('scence 1-11-5');
-      }else if(sessionStorage.getItem('department') === '공직자다이렉트과'){
+      }else if(sessionStorage.getItem('department1') === '공직자다이렉트과'){
         document.getElementById('story 1-11-2').innerText = sessionStorage.getItem('scence 1-11-6');
       }
      })
@@ -252,7 +252,7 @@ const Story_ch1_10_1_1 = () => {
       <div className="div29-one-ten">
         본인의 적성/관심사와 가장 가까운 학과를 선택해주세요.
       </div>
-      <img className="group-icon35-one-ten" alt="" src="../group9.svg" />
+      <img className="group-icon35-one-ten" alt="" src="../작은 마쿠.png" />
       <b className="b3-one-ten">{user_name}님의 학과를 선택해주세요.</b>
     </div>
   );
