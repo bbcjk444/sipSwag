@@ -40,7 +40,7 @@ import Ch1_game_clear from "./pages/ch1/Ch1_Game_clear";
 import Ch1_Clear from "./pages/ch1/Story_ch1_clear";
 import Game1 from "./pages/ch1/game1/OneToFifty";
 import Result from "./result";
-import Ch2_Start from "./ch2/ch2/Story_ch2_start"; 
+import Ch2_Start from "./ch2/ch2/Story_ch2_start";
 import Ch2_Story1 from "./ch2/ch2/Story_ch2_1";
 import Ch2_Story2 from "./ch2/ch2/Story_ch2_2";
 import Ch2_Story3 from "./ch2/ch2/Story_ch2_3";
@@ -72,6 +72,8 @@ import Ch2_game_result2 from "./ch2/ch2/Game_ch2_result_02";
 import Ch2_game_result3 from "./ch2/ch2/Game_ch2_result_03";
 import Ch2_game_clear from "./ch2/ch2/Ch2_Game_clear";
 import Ch2_Clear from "./ch2/ch2/Story_ch2_clear";
+import SecondGameCard from "./ch2/ch2/secondGame/Cards";
+import SecondGameCar from "./ch2/ch2/DragCo";
 import { useEffect } from "react";
 
 function App() {
@@ -213,6 +215,9 @@ function App() {
 
       <Route path="/ch2clear" element={<Ch2_Clear />} />
 
+      <Route path="/ch2CardGame" element={<SecondGameCard />} />
+
+      <Route path="/ch2CarGame" element={<SecondGameCar />} />
     </Routes>
   );
 }
