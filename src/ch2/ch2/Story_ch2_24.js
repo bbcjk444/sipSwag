@@ -159,7 +159,7 @@ const Story_ch2_24= () => {
         document.getElementById('story 2-25-1').innerText = sessionStorage.getItem('scence 2-25-2');
       }else if(sessionStorage.getItem('department2') === '에디슈타인'){
         document.getElementById('story 2-25-1').innerText = sessionStorage.getItem('scence 2-25-3');
-      }else if(sessionStorage.getItem('deprtment2') === '굉장한창업'){
+      }else if(sessionStorage.getItem('department2') === '굉장한창업'){
         document.getElementById('story 2-25-1').innerText = sessionStorage.getItem('scence 2-25-4');
       }else if(sessionStorage.getItem('department2') === '목표는3대1000'){
         document.getElementById('story 2-25-1').innerText = sessionStorage.getItem('scence 2-25-5');
@@ -171,7 +171,12 @@ const Story_ch2_24= () => {
     .catch((e) => {
       console.error(e);
     });
-    navigate('/ch2story25');
+    
+    if(sessionStorage.getItem('department2') != null){
+      navigate('/ch2story25');
+    }else{
+      alert('이상형 마쿠의 동아리를 선택해주세요');
+    }
   }
 
   return (

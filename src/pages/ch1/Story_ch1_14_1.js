@@ -151,7 +151,12 @@ const Story_ch1_14_1 = () => {
     .catch((e) => {
       console.error(e);
     });
-    navigate('/ch1story15');
+    
+    if(sessionStorage.getItem('what') != null){
+      navigate('/ch1story15');
+    }else{
+      alert('뭘 하실지 골라주세요');
+    }
   }
 
   return (
@@ -231,7 +236,7 @@ const Story_ch1_14_1 = () => {
       </div>
       <img className="group-icon33-one-fourteen-one" alt="" src="../Group 328.png" onClick={nextstory}/>
       <div className="div29-one-fourteen-one">
-        본인의 적성/관심사와 가장 가까운 학과를 선택해주세요.
+          본인의 적성/관심사와 가장 가까운 선택지를 골라주세요.
       </div>
       <b className="b3-one-fourteen-one">{user_name}님은 그동안 어떤 걸 할까요?</b>
     </div>

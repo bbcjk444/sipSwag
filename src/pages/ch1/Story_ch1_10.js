@@ -169,7 +169,13 @@ const Story_ch1_10_1_1 = () => {
     .catch((e) => {
       console.error(e);
     });
-    navigate('/ch1story11');
+
+    if(sessionStorage.getItem('department1') != null){
+      navigate('/ch1story11');
+    }else{
+      alert('학과를 선택해주세요');
+    }
+    
   }
 
   return (

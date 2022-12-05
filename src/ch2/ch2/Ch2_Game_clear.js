@@ -9,21 +9,27 @@ const Ch2_Game_clear = () => {
 
   const navigate = useNavigate();
 
-  const nextstory = () => { axios
-    .post('http://localhost:8008/getstory', {
-      scenario_num: 1,
-      chapter_num: 1,
-      scene_num: 14,
-    })
-    .then((res) => {
-      console.log('스토리 리턴값 확인1 => ' + JSON.stringify(res));
-      window.sessionStorage.setItem('scence 1-14-1', JSON.stringify(res.data[0].speak_story).substring(1,JSON.stringify(res.data[0].speak_story).length-1));
-      document.getElementById('story 1-14-1').innerText = sessionStorage.getItem('scence 1-14-1');
+  var user_name = sessionStorage.getItem('user_name');
+
+  const nextstory = () => { 
+      axios
+     .post('http://localhost:8008/getstory', {
+       scenario_num: 1,
+       chapter_num: 2,
+       scene_num: 24,
      })
-    .catch((e) => {
-      console.error(e);
-    });
-    navigate('/ch1story13');
+     .then((res) => {
+       console.log('스토리 리턴값 확인1 => ' + JSON.stringify(res));
+       window.sessionStorage.setItem('scence 2-23-1', JSON.stringify(res.data[0].speak_story).substring(1,JSON.stringify(res.data[0].speak_story).length-1));
+       window.sessionStorage.setItem('scence 2-23-2', JSON.stringify(res.data[1].speak_story).substring(1,JSON.stringify(res.data[1].speak_story).length-1));     
+       window.sessionStorage.setItem('scence 2-23-3', JSON.stringify(res.data[2].speak_story).substring(1,JSON.stringify(res.data[2].speak_story).length-1));     
+       document.getElementById('story 2-23-1').innerText = sessionStorage.getItem('scence 2-23-1') + " " + user_name + ", " + sessionStorage.getItem('scence 2-23-3');
+       document.getElementById('story 2-23-2').innerText = sessionStorage.getItem('scence 2-23-2');
+     })
+     .catch((e) => {
+       console.error(e);
+     });
+    navigate('/ch2story23')
   }
 
   return (

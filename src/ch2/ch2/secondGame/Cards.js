@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "./Card";
 import "./Cards.css";
+import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import titleGame from "./Frame.png";
 import gameBtnGo from "./Group 328.png";
@@ -69,12 +70,49 @@ function Cards() {
 
   function nextPage() {
     if (total > 7) {
-      navigate("/test");
-      sessionStorage.setItem("secondGametimeclick", clickCount);
+      sessionStorage.setItem("secondGametimeclick", clickCount);  
+      var click = sessionStorage.getItem('secondGametimeclick');
+      axios
+     .post('http://localhost:8008/getstory', {
+       scenario_num: 1,
+       chapter_num: 2,
+       scene_num: 23,
+     })
+     .then((res) => {
+       console.log('스토리 리턴값 확인1 => ' + JSON.stringify(res));
+       window.sessionStorage.setItem('story 2-result1-1', JSON.stringify(res.data[0].speak_story).substring(1,JSON.stringify(res.data[0].speak_story).length-1));
+       window.sessionStorage.setItem('story 2-result1-2', JSON.stringify(res.data[1].speak_story).substring(1,JSON.stringify(res.data[1].speak_story).length-1));     
+       window.sessionStorage.setItem('story 2-result2-1', JSON.stringify(res.data[2].speak_story).substring(1,JSON.stringify(res.data[2].speak_story).length-1));     
+       window.sessionStorage.setItem('story 2-result2-2', JSON.stringify(res.data[3].speak_story).substring(1,JSON.stringify(res.data[3].speak_story).length-1));     
+       window.sessionStorage.setItem('story 2-result3-1', JSON.stringify(res.data[4].speak_story).substring(1,JSON.stringify(res.data[4].speak_story).length-1));     
+       window.sessionStorage.setItem('story 2-result3-2', JSON.stringify(res.data[5].speak_story).substring(1,JSON.stringify(res.data[5].speak_story).length-1));
+       
+       if(click <= 20){
+        document.getElementById('story 2-result1-1').innerText = sessionStorage.getItem('story 2-result1-1');
+        document.getElementById('story 2-result1-2').innerText = sessionStorage.getItem('story 2-result1-2');
+      }else if(click > 20 && click <= 30){
+        document.getElementById('story 2-result2-1').innerText = sessionStorage.getItem('story 2-result2-1');
+        document.getElementById('story 2-result2-2').innerText = sessionStorage.getItem('story 2-result2-2');
+      }else if(click > 30) {
+        document.getElementById('story 2-result3-1').innerText = sessionStorage.getItem('story 2-result3-1');
+        document.getElementById('story 2-result3-2').innerText = sessionStorage.getItem('story 2-result3-2');
+      }
+     })
+     .catch((e) => {
+       console.error(e);
+     });
     } else {
       alert("성공해주세요");
     }
+    if(click <= 20){
+      navigate('/ch2result1')
+    }else if(click > 20 && click <= 30){
+      navigate('/ch2result2')
+    }else if(click > 30){
+      navigate('/ch2result3')
+    }
   }
+
   return (
     <div className="bbody">
       <div className="mainContainer">

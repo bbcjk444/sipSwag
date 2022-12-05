@@ -10,7 +10,13 @@ const Story_ch1_09 = () => {
   
   const nextstory = () => {
     sessionStorage.setItem('user_name', user_nameRef.current.value);
-    navigate('/ch1story10')
+    console.log(sessionStorage.getItem('user_name'));
+    if(sessionStorage.getItem('user_name') != ''){
+      navigate('/ch1story10')
+    }else{
+      alert('닉네임을 입력해주세요');
+    }
+    
   }
 
   return (
