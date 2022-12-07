@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <!-- 버전에 따라서 예제가 동작하지 않는 경우가 있습니다. 아래 버전을 권장합니다. -->
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@0.1.2/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.4.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+  </head>
+  <body>
+    <script>
+      dfd.read_csv("./train.csv").then(function (data) {
+        // console.log(data);
+        data.print();
+        독립변수 = data.loc({
+          columns: ["alacrity", "ability", "observation", "logical"],
+        });
+        독립변수.print();
+        var encoder = new dfd.OneHotEncoder();
+        종속변수 = encoder.fit(data["result"]);
+        data["result"].print();
+        종속변수.print();
+
+        var X = tf.input({ shape: [4] });
+        var H = tf.layers.dense({ units: 4, activation: "relu" }).apply(X);
+
+        // var Y = tf.layers.dense({ units: 12 }).apply(H);
+        var Y = tf.layers.dense({ units: 10, activation: "softmax" }).apply(H);
+        var Z = tf.layers.dense({ units: 12, activation: "softmax" }).apply(Y);
+
+        model = tf.model({ inputs: X, outputs: Z });
+
+        // var compileParam = {
+        //   optimizer: tf.train.adam(),
+        //   loss: tf.losses.meanSquaredError,
+        // };
+        var compileParam = {
+          optimizer: tf.train.adam(),
+          loss: "categoricalCrossentropy",
+          metrics: ["accuracy"],
+        };
+        model.compile(compileParam);
+        tfvis.show.modelSummary({ name: "요약", tab: "모델" }, model);
+        _history = [];
+        var fitParam = {
+          epochs: 300,
+          callbacks: {
+            onEpochEnd: function (epoch, logs) {
+              console.log("epoch", epoch, logs, "RMSE=>", Math.sqrt(logs.loss));
+              _history.push(logs);
+              tfvis.show.history({ name: "loss", tab: "역사" }, _history, [
+                "loss",
+              ]);
+              tfvis.show.history({ name: "accuracy", tab: "역사" }, _history, [
+                "acc",
+              ]);
+            },
+          },
+        };
+        model
+          .fit(독립변수.tensor, 종속변수.tensor, fitParam)
+          .then(function (result) {
+            //         // 4. 모델을 이용합니다.
+            //         // 4.1 기존의 데이터를 이용
+            예측한결과 = new dfd.DataFrame(model.predict(독립변수.tensor));
+            예측한결과.print();
+            종속변수.print();
+            model.save("localstorage://lemonssssss");
+            model.save("downloads://lemonsssss");
+          });
+      });
+    </script>
+  </body>
+</html>

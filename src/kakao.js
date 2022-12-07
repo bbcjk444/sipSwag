@@ -44,7 +44,6 @@ class Kakao extends Component {
     return (
       <div className="Kakao">
         <button id="kakao-link-btn" onClick={this.onClickKakao}>
-          {/* <img src={kakao} alt="kakao" /> */}
           공유하기
         </button>
       </div>

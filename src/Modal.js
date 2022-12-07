@@ -7,13 +7,6 @@ function Modal({ modal, openModal }) {
       <div className="modal">
         <Login modal={modal} openModal={openModal}></Login>
       </div>
-      <button
-        onClick={() => {
-          openModal(modal);
-        }}
-      >
-        X
-      </button>
     </>
   );
 }

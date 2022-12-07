@@ -2,10 +2,46 @@ import "./result.css";
 import Haxagon from "./hexagon";
 import styled from "styled-components";
 import React, { useEffect } from "react";
-import Kakao from "./kakao";
+// import Kakao from "./kakao";
 import Slides from "./Slides";
 
 function result() {
+  const shareKakao = () => {
+    try {
+      if (window.Kakao) {
+        window.Kakao.init("8f1b8e2edd5b94e672b23fa6a93ac21b");
+      }
+    } catch (e) {}
+    window.Kakao.Link.sendDefault({
+      objectType: "feed",
+      content: {
+        title: "사려깊은 산타마쿠",
+        description: "“내 사람들이 모두 행복했으면 좋겠어!”",
+        imageUrl: "https://i.ibb.co/Lz0zWC1/image-skuta.png",
+        link: {
+          mobileWebUrl: "http://localhost:3000/result",
+          webUrl: "http://localhost:3000/result",
+        },
+      },
+
+      buttons: [
+        {
+          title: "웹으로 보기",
+          link: {
+            mobileWebUrl: "http://localhost:3000/result",
+            webUrl: "http://localhost:3000/result",
+          },
+        },
+        {
+          title: "앱으로 보기",
+          link: {
+            mobileWebUrl: "http://localhost:3000/result",
+            webUrl: "http://localhost:3000/result",
+          },
+        },
+      ],
+    });
+  };
   return (
     <div className="div">
       <div className="group-div">
@@ -38,42 +74,6 @@ function result() {
         </p>
       </div>
       <Slides />
-      {/* <div className="group-div1">
-        <div className="rectangle-div1" />
-        <div className="rectangle-div2" />
-        <div className="rectangle-div3" />
-        <div className="div7">사려깊은 산타마쿠 85%</div>
-        <div className="div8">사려깊은 산타마쿠 54%</div>
-        <div className="div9">사려깊은 산타마쿠 42%</div>
-        <div className="div11">
-          <p className="p">
-            <span className="span">당나귀</span>
-          </p>
-          <p className="p8">
-            <span className="span1">봉사 동아리</span>
-          </p>
-        </div>
-        <div className="div12">
-          <p className="p">
-            <span className="span">당나귀</span>
-          </p>
-          <p className="p8">
-            <span className="span1">봉사 동아리</span>
-          </p>
-        </div>
-        <div className="div13">
-          <p className="p">
-            <span className="span">당나귀</span>
-          </p>
-          <p className="p8">
-            <span className="span1">봉사 동아리</span>
-          </p>
-        </div>
-        <img className="mask-group-icon" alt="" src="../mask-group.png" />
-        <img className="mask-group-icon1" alt="" src="../mask-group1.png" />
-        <img className="mask-group-icon2" alt="" src="../mask-group2.png" />
-        <img className="mask-group-icon3" alt="" src="../mask-group3.png" />
-      </div> */}
       <div className="rectangle-div5" />
       <div className="div17">
         <p className="p">
@@ -132,9 +132,9 @@ function result() {
       <div className="div27">처음부터 다시 하기</div>
       <div className="rectangle-div10" />
       <div className="rectangle-div11" />
-      <div className="div28">
-        {/* 친구에게 공유하기 */}
-        <Kakao />
+      <div className="div28" onClick={shareKakao}>
+        친구에게 공유하기
+        {/* <Kakao /> */}
       </div>
       <div className="div29">동아리하러 가기</div>
 
