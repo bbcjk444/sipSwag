@@ -90,12 +90,15 @@ function Cards() {
        if(click <= 20){
         document.getElementById('story 2-result1-1').innerText = sessionStorage.getItem('story 2-result1-1');
         document.getElementById('story 2-result1-2').innerText = sessionStorage.getItem('story 2-result1-2');
+        window.sessionStorage.setItem('observation-game2',35);
       }else if(click > 20 && click <= 30){
         document.getElementById('story 2-result2-1').innerText = sessionStorage.getItem('story 2-result2-1');
         document.getElementById('story 2-result2-2').innerText = sessionStorage.getItem('story 2-result2-2');
+        window.sessionStorage.setItem('observation-game2',25);
       }else if(click > 30) {
         document.getElementById('story 2-result3-1').innerText = sessionStorage.getItem('story 2-result3-1');
         document.getElementById('story 2-result3-2').innerText = sessionStorage.getItem('story 2-result3-2');
+        window.sessionStorage.setItem('observation-game2',15);
       }
      })
      .catch((e) => {

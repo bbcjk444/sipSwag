@@ -30,9 +30,13 @@ const Story_ch2_24= () => {
     document.getElementById('class-two-five-two').style.color = "black";
     document.getElementById('class-two-six-one').style.color = "black";
     document.getElementById('class-two-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity3',10);
+    window.sessionStorage.setItem('observation3',10);
+    window.sessionStorage.setItem('logical3',0);
+    window.sessionStorage.setItem('ability3',0);  
   }
   const select_two = () => {
-    window.sessionStorage.setItem('department2', '봉사일만시간');
+    window.sessionStorage.setItem('department2', '개발일만시간');
     document.getElementsByClassName('rectangle-div60-two-twentyfour')[0].style.backgroundColor = "#D9D9D9";
     document.getElementsByClassName('rectangle-div61-two-twentyfour')[0].style.backgroundColor = "#147176";
     document.getElementsByClassName('rectangle-div62-two-twentyfour')[0].style.backgroundColor = "#D9D9D9";
@@ -51,6 +55,10 @@ const Story_ch2_24= () => {
     document.getElementById('class-two-five-two').style.color = "black";
     document.getElementById('class-two-six-one').style.color = "black";
     document.getElementById('class-two-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity3',0);
+    window.sessionStorage.setItem('observation3',10);
+    window.sessionStorage.setItem('logical3',0);
+    window.sessionStorage.setItem('ability3',10);  
   }
   const select_three = () => {
     window.sessionStorage.setItem('department2', '에디슈타인');
@@ -72,6 +80,10 @@ const Story_ch2_24= () => {
     document.getElementById('class-two-five-two').style.color = "black";
     document.getElementById('class-two-six-one').style.color = "black";
     document.getElementById('class-two-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity3',0);
+    window.sessionStorage.setItem('observation3',0);
+    window.sessionStorage.setItem('logical3',10);
+    window.sessionStorage.setItem('ability3',10);  
   }
   const select_four = () => {
     window.sessionStorage.setItem('department2', '굉장한창업');
@@ -93,6 +105,10 @@ const Story_ch2_24= () => {
     document.getElementById('class-two-five-two').style.color = "black";
     document.getElementById('class-two-six-one').style.color = "black";
     document.getElementById('class-two-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity3',10);
+    window.sessionStorage.setItem('observation3',0);
+    window.sessionStorage.setItem('logical3',0);
+    window.sessionStorage.setItem('ability3',10);  
   }
   const select_five = () => {
     window.sessionStorage.setItem('department2', '목표는3대1000');
@@ -114,6 +130,10 @@ const Story_ch2_24= () => {
     document.getElementById('class-two-five-two').style.color = "yellow";
     document.getElementById('class-two-six-one').style.color = "black";
     document.getElementById('class-two-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity3',10);
+    window.sessionStorage.setItem('observation3',0);
+    window.sessionStorage.setItem('logical3',10);
+    window.sessionStorage.setItem('ability3',0);  
   }
   const select_six = () => {
     window.sessionStorage.setItem('department2', '취업다부수는');
@@ -135,6 +155,10 @@ const Story_ch2_24= () => {
     document.getElementById('class-two-five-two').style.color = "black";
     document.getElementById('class-two-six-one').style.color = "white";
     document.getElementById('class-two-six-two').style.color = "yellow";
+    window.sessionStorage.setItem('alacrity3',0);
+    window.sessionStorage.setItem('observation3',10);
+    window.sessionStorage.setItem('logical3',10);
+    window.sessionStorage.setItem('ability3',0);  
   }
 
   const nextstory = () => {
@@ -155,7 +179,7 @@ const Story_ch2_24= () => {
       window.sessionStorage.setItem('scence 2-25-7', JSON.stringify(res.data[6].speak_story).substring(1,JSON.stringify(res.data[6].speak_story).length-1));
       if(sessionStorage.getItem('department2') === '너만오면합주'){
         document.getElementById('story 2-25-1').innerText = sessionStorage.getItem('scence 2-25-1');
-      }else if(sessionStorage.getItem('department2') === '봉사일만시간'){
+      }else if(sessionStorage.getItem('department2') === '개발일만시간'){
         document.getElementById('story 2-25-1').innerText = sessionStorage.getItem('scence 2-25-2');
       }else if(sessionStorage.getItem('department2') === '에디슈타인'){
         document.getElementById('story 2-25-1').innerText = sessionStorage.getItem('scence 2-25-3');
@@ -189,7 +213,7 @@ const Story_ch2_24= () => {
             <span>우리는 세상에 없던 걸 만들어!</span>
           </p>
           <p className="p36-two-twentyfour" id="class-two-two-two" >
-            <b>봉사일만시간 동아리</b>
+            <b>개발일만시간 동아리</b>
           </p>
         </div>
         </div>

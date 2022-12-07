@@ -30,6 +30,10 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-five-two').style.color = "black";
     document.getElementById('class-six-one').style.color = "black";
     document.getElementById('class-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity1',10);
+    window.sessionStorage.setItem('observation1',10);
+    window.sessionStorage.setItem('logical1',0);
+    window.sessionStorage.setItem('ability1',0);   
   }
   const select_two = () => {
     window.sessionStorage.setItem('department1', '탐구발명천재학과');
@@ -51,6 +55,10 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-five-two').style.color = "black";
     document.getElementById('class-six-one').style.color = "black";
     document.getElementById('class-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity1',0);
+    window.sessionStorage.setItem('observation1',10);
+    window.sessionStorage.setItem('logical1',0);
+    window.sessionStorage.setItem('ability1',10);  
   }
   const select_three = () => {
     window.sessionStorage.setItem('department1', '세계공인인싸학과');
@@ -72,6 +80,10 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-five-two').style.color = "black";
     document.getElementById('class-six-one').style.color = "black";
     document.getElementById('class-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity1',0);
+    window.sessionStorage.setItem('observation1',0);
+    window.sessionStorage.setItem('logical1',10);
+    window.sessionStorage.setItem('ability1',10);  
   }
   const select_four = () => {
     window.sessionStorage.setItem('department1', 'CEO리더멋쟁이학과');
@@ -93,6 +105,10 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-five-two').style.color = "black";
     document.getElementById('class-six-one').style.color = "black";
     document.getElementById('class-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity1',10);
+    window.sessionStorage.setItem('observation1',0);
+    window.sessionStorage.setItem('logical1',0);
+    window.sessionStorage.setItem('ability1',10);  
   }
   const select_five = () => {
     window.sessionStorage.setItem('department1', '특수요원양성학과');
@@ -114,6 +130,10 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-five-two').style.color = "yellow";
     document.getElementById('class-six-one').style.color = "black";
     document.getElementById('class-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity1',0);
+    window.sessionStorage.setItem('observation1',10);
+    window.sessionStorage.setItem('logical1',10);
+    window.sessionStorage.setItem('ability1',0);  
   }
   const select_six = () => {
     window.sessionStorage.setItem('department1', '공직자다이렉트과');
@@ -135,6 +155,10 @@ const Story_ch1_10_1_1 = () => {
     document.getElementById('class-five-two').style.color = "black";
     document.getElementById('class-six-one').style.color = "white";
     document.getElementById('class-six-two').style.color = "yellow";
+    window.sessionStorage.setItem('alacrity1',10);
+    window.sessionStorage.setItem('observation1',0);
+    window.sessionStorage.setItem('logical1',10);
+    window.sessionStorage.setItem('ability1',0);  
   }
 
   const nextstory = () => {

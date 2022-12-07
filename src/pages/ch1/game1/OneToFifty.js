@@ -66,16 +66,22 @@ function OneToFifty() {
           window.sessionStorage.setItem('scence 1-result1-2', JSON.stringify(res.data[1].speak_story).substring(1,JSON.stringify(res.data[1].speak_story).length-1));
           document.getElementById('story 1-result1-1').innerText = sessionStorage.getItem('scence 1-result1-1');
           document.getElementById('story 1-result1-2').innerText = sessionStorage.getItem('scence 1-result1-2');
+          window.sessionStorage.setItem('alacrity-game1',35);
+          window.sessionStorage.setItem('observation-game1',35);
         }else if( test1 > 15 &&  test1 <= 18){
           window.sessionStorage.setItem('scence 1-result2-1', JSON.stringify(res.data[2].speak_story).substring(1,JSON.stringify(res.data[2].speak_story).length-1));
           window.sessionStorage.setItem('scence 1-result2-2', JSON.stringify(res.data[3].speak_story).substring(1,JSON.stringify(res.data[3].speak_story).length-1));
           document.getElementById('story 1-result2-1').innerText = sessionStorage.getItem('scence 1-result2-1');
           document.getElementById('story 1-result2-2').innerText = sessionStorage.getItem('scence 1-result2-2');
+          window.sessionStorage.setItem('alacrity-game1',25);
+          window.sessionStorage.setItem('observation-game1',25);
         }else if( test1 > 18){
           window.sessionStorage.setItem('scence 1-result3-1', JSON.stringify(res.data[4].speak_story).substring(1,JSON.stringify(res.data[4].speak_story).length-1));
           window.sessionStorage.setItem('scence 1-result3-2', JSON.stringify(res.data[5].speak_story).substring(1,JSON.stringify(res.data[5].speak_story).length-1));
           document.getElementById('story 1-result3-1').innerText = sessionStorage.getItem('scence 1-result3-1');
           document.getElementById('story 1-result3-2').innerText = sessionStorage.getItem('scence 1-result3-2');
+          window.sessionStorage.setItem('alacrity-game1',15);
+          window.sessionStorage.setItem('observation-game1',15);
         }
        })
       .catch((e) => {

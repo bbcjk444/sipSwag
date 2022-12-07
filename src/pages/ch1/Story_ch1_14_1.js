@@ -29,6 +29,10 @@ const Story_ch1_14_1 = () => {
     document.getElementById('class-fourteen-five-two').style.color = "black";
     document.getElementById('class-fourteen-six-one').style.color = "black";
     document.getElementById('class-fourteen-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity2',10);
+    window.sessionStorage.setItem('observation2',10);
+    window.sessionStorage.setItem('logical2',0);
+    window.sessionStorage.setItem('ability2',0);  
   }
   const select_two = () => {
     window.sessionStorage.setItem('what', '전공책을 미리 사서 예습해보자!');
@@ -50,6 +54,10 @@ const Story_ch1_14_1 = () => {
     document.getElementById('class-fourteen-five-two').style.color = "black";
     document.getElementById('class-fourteen-six-one').style.color = "black";
     document.getElementById('class-fourteen-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity2',0);
+    window.sessionStorage.setItem('observation2',10);
+    window.sessionStorage.setItem('logical2',0);
+    window.sessionStorage.setItem('ability2',10);  
   }
   const select_three = () => {
     window.sessionStorage.setItem('what', '단과 대화방에서 잡힌 번개모임에 가야지!');
@@ -71,6 +79,10 @@ const Story_ch1_14_1 = () => {
     document.getElementById('class-fourteen-five-two').style.color = "black";
     document.getElementById('class-fourteen-six-one').style.color = "black";
     document.getElementById('class-fourteen-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity2',0);
+    window.sessionStorage.setItem('observation2',0);
+    window.sessionStorage.setItem('logical2',10);
+    window.sessionStorage.setItem('ability2',10);  
   }
   const select_four = () => {
     window.sessionStorage.setItem('what', '자격증을 먼저 부순다. 지금부터 공부 시작!');
@@ -92,6 +104,10 @@ const Story_ch1_14_1 = () => {
     document.getElementById('class-fourteen-five-two').style.color = "black";
     document.getElementById('class-fourteen-six-one').style.color = "black";
     document.getElementById('class-fourteen-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity2',10);
+    window.sessionStorage.setItem('observation2',0);
+    window.sessionStorage.setItem('logical2',0);
+    window.sessionStorage.setItem('ability2',10);  
   }
   const select_five = () => {
     window.sessionStorage.setItem('what', '매일매일 헬스장에 가자!');
@@ -113,6 +129,10 @@ const Story_ch1_14_1 = () => {
     document.getElementById('class-fourteen-five-two').style.color = "yellow";
     document.getElementById('class-fourteen-six-one').style.color = "black";
     document.getElementById('class-fourteen-six-two').style.color = "black";
+    window.sessionStorage.setItem('alacrity2',10);
+    window.sessionStorage.setItem('observation2',0);
+    window.sessionStorage.setItem('logical2',10);
+    window.sessionStorage.setItem('ability2',0);  
   }
   const select_six = () => {
     window.sessionStorage.setItem('what', '한 학기 내 대학생활의 로드맵을 그려보자!');
@@ -134,6 +154,10 @@ const Story_ch1_14_1 = () => {
     document.getElementById('class-fourteen-five-two').style.color = "black";
     document.getElementById('class-fourteen-six-one').style.color = "white";
     document.getElementById('class-fourteen-six-two').style.color = "yellow";
+    window.sessionStorage.setItem('alacrity2',0);
+    window.sessionStorage.setItem('observation2',10);
+    window.sessionStorage.setItem('logical2',10);
+    window.sessionStorage.setItem('ability2',0);  
   }
 
   const nextstory = () => {

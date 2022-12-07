@@ -7,8 +7,22 @@ const Story_ch2_26 = () => {
   var user_name = sessionStorage.getItem('user_name');
 
   const navigate = useNavigate();
-  
+
+  var alacrity = Number(sessionStorage.getItem("alacrity1")) + Number(sessionStorage.getItem("alacrity2")) + Number(sessionStorage.getItem("alacrity-game1")) + Number(sessionStorage.getItem("alacrity3"));
+  var observation = Number(sessionStorage.getItem("observation1")) + Number(sessionStorage.getItem("observation2")) + Number(sessionStorage.getItem("observation-game1")) + Number(sessionStorage.getItem("observation3")) + Number(sessionStorage.getItem("observation-game2"));
+  var logical = Number(sessionStorage.getItem("logical1")) + Number(sessionStorage.getItem("logical2")) + Number(sessionStorage.getItem("logical3"));
+  var ability = Number(sessionStorage.getItem("ability1")) + Number(sessionStorage.getItem("ability2")) + Number(sessionStorage.getItem("ability3"));
+
+  console.log("순발 총점 => " + alacrity);
+  console.log("관찰 총점 => " + observation);
+  console.log("논리 총점 => " + logical);
+  console.log("사고 총점 => " + ability);
+
   const nextstory = () => {
+    window.sessionStorage.setItem('allalacrity', alacrity);
+    window.sessionStorage.setItem('allobservation', observation);
+    window.sessionStorage.setItem('alllogical', logical);
+    window.sessionStorage.setItem('allability', ability);
     navigate('/ch2clear')
   }
 

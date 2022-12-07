@@ -120,8 +120,7 @@ const Scenarioupdate = () => {
                 size="70"
             />
             </div>
-             <input className="btn" type="button" value="대사 수정" onClick={sceupdate} />
-
+             <input className="btn" type="button" value="대본 수정" onClick={sceupdate} />
         </div>
     )
 }

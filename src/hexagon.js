@@ -12,22 +12,22 @@ function Haxagon() {
   const data = [
     {
       subject: "순발",
-      A: sessionStorage.getItem("alacrity"),
+      A: sessionStorage.getItem("allalacrity"),
       fullMark: 100,
     },
     {
       subject: "사고",
-      A: sessionStorage.getItem("ability"),
+      A: sessionStorage.getItem("allability"),
       fullMark: 100,
     },
     {
       subject: "관찰",
-      A: sessionStorage.getItem("observation"),
+      A: sessionStorage.getItem("allobservation"),
       fullMark: 100,
     },
     {
       subject: "논리",
-      A: sessionStorage.getItem("logical"),
+      A: sessionStorage.getItem("alllogical"),
       fullMark: 100,
     },
     // {
