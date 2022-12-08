@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: #34495e;
+}
+
+.joinForm {
+  position: absolute;
+  width: 550px;
+  height: 900px;
+  padding: 30px, 20px;
+  background: rgba(40, 57, 101, 0.9);
+  text-align: center;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.joinForm h2 {
+  text-align: center;
+  margin: 30px;
+}
+
+.textForm {
+  border-bottom: 2px solid #adadad;
+  margin: 20px;
+  padding: 10px 10px;
+}
+
+.id {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #636e72;
+  font-size: 16px;
+  height: 25px;
+  background: none;
+}
+
+.pw {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #636e72;
+  font-size: 16px;
+  height: 25px;
+  background: none;
+}
+
+.name {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #636e72;
+  font-size: 16px;
+  height: 25px;
+  background: none;
+}
+
+.email {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #636e72;
+  font-size: 16px;
+  height: 25px;
+  background: none;
+}
+
+.nickname {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #636e72;
+  font-size: 16px;
+  height: 25px;
+  background: none;
+}
+
+.cellphoneNo {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #636e72;
+  font-size: 16px;
+  height: 25px;
+  background: none;
+}
+
+.btn {
+  position: relative;
+  left: 40%;
+  transform: translateX(-50%);
+  margin-bottom: 28px;
+  width: 80%;
+  height: 40px;
+  background: linear-gradient(125deg, #81ecec, #6c5ce7, #81ecec);
+  background-position: left;
+  background-size: 200%;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  display: inline;
+}
+.radio {
+  border-bottom: 2px solid #adadad;
+  margin: 20px;
+  padding: 10px 10px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-position: right;
+}

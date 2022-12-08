@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import "./Login";
+import "./join.css";
 
 const Join = ({ modal2, openModal2 }) => {
   const idRef = useRef();
@@ -124,12 +124,8 @@ const Join = ({ modal2, openModal2 }) => {
           console.log("handleJoin =>", res);
           if (res.data.affectedRows === 1) {
             alert("회원가입이 되었습니다");
-            // navigate("/login");
-            // openModal2(modal2);
           } else {
             alert("회원가입이 되지 않았습니다.");
-            // navigate("/join");
-            // openModal2(modal2);
           }
           openModal2(modal2);
         })
@@ -147,95 +143,61 @@ const Join = ({ modal2, openModal2 }) => {
   };
 
   return (
-    <div className="sign-up-htm" align="center">
-      <div className="group">
-        <label for="user" className="label">
-          아이디
-        </label>
-        <input
-          type="text"
-          id="username"
-          name="username"
-          placeholder="아이디를 입력해주세요"
-          className="input"
-          ref={idRef}
-          defaultValue=""
-        />
-      </div>
-      <div className="group">
-        <input id="check" type="checkbox" className="check" checked />
-        <label for="check">
+    <div>
+      <form className="joinForm">
+        <h2>회원가입</h2>
+        <div className="textForm">
+          <input
+            type="text"
+            className="id"
+            ref={idRef}
+            placeholder="아이디를 입력해주세요"
+          />
+        </div>
+        <div>
           <h8 id="idcheck">아이디 중복 확인</h8>
           <input
             type="button"
             value="idcheck"
             onClick={handleidcheck}
             id="check"
-            className="check"
           />
-        </label>
-      </div>
-      <div className="group">
-        <label for="pass" className="label">
-          패스워드
-        </label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="비밀번호를 입력해주세요"
-          className="input"
-          ref={pw1Ref}
-          defaultValue=""
-          data-type="password"
-        />
-      </div>
-      <div className="group">
-        <label for="pass" className="label">
-          패스워드 확인
-        </label>
-        <input
-          type="password"
-          id="pass"
-          name="password"
-          placeholder="비밀번호 확인"
-          className="input"
-          ref={pw2Ref}
-          defaultValue=""
-          data-type="password"
-        />
-      </div>
-      <div className="group">
-        <input id="check" type="checkbox" className="check" checked />
-        <label for="check">
-          <h8 id="idcheck">비밀번호 확인</h8>
+        </div>
+        <div className="textForm">
+          <input
+            type="password"
+            className="pw"
+            ref={pw1Ref}
+            placeholder="비밀번호를 입력해주세요"
+          />
+        </div>
+        <div className="textForm">
+          <input
+            type="password"
+            className="pw"
+            ref={pw2Ref}
+            placeholder="비밀번호를 입력해주세요"
+          />
+        </div>
+        <div>
+          <h8 id="pwcheck">비밀번호 확인</h8>
           <input
             type="button"
             value="pwcheck"
             onClick={handlepwcheck}
-            id="check"
-            className="check"
-            // id="pwcheckbutton"
+            id="pwcheckbutton"
           />
-        </label>
-      </div>
-      <div className="group">
-        <label for="pass" className="label">
-          닉네임
-        </label>
-        <input
-          type="text"
-          id="nick"
-          name="nick"
-          placeholder="닉네임을 입력해주세요"
-          className="input"
-          ref={nickRef}
-          defaultValue=""
-        />
-      </div>
-      <div className="group">
-        <input id="check" type="checkbox" className="check" checked />
-        <label for="check">
+        </div>
+        <div className="textForm">
+          <input
+            name="nickname"
+            type="text"
+            class="nickname"
+            placeholder="닉네임을 입력해주세요"
+            ref={nickRef}
+          />
+        </div>
+        <div>
           <h8 id="nickcheck">닉네임 중복 확인</h8>
           <input
             type="button"
@@ -243,61 +205,57 @@ const Join = ({ modal2, openModal2 }) => {
             onClick={handlenickcheck}
             id="nickcheckbutton"
           />
-        </label>
-      </div>
-      <div className="group">
+        </div>
+        <div className="textForm">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className="name"
+            placeholder="이름을 입력해주세요"
+            ref={nameRef}
+          />
+        </div>
+        <div className="textForm">
+          <input
+            type="text"
+            id="tell"
+            name="tell"
+            className="cellphoneNo"
+            placeholder="전화번호을 입력해주세요"
+            ref={tellRef}
+          />
+        </div>
+        <div>
+          <h8 id="tellcheck">전화번호 확인</h8>
+          <input
+            type="button"
+            value="tellcheck"
+            onClick={handletellcheck}
+            id="tellcheckbutton"
+          />
+          <div className="radio" align="center">
+            <td width="400">
+              <input type="radio" name="gender" value="남" />
+              남자
+              <input type="radio" name="gender" value="여" />
+              여자
+            </td>
+          </div>
+        </div>
         <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="이름을 입력해주세요"
-          className="input"
-          ref={nameRef}
-          defaultValue=""
-        />
-      </div>
-      <div className="group">
-        <input
-          type="text"
-          id="tell"
-          name="tell"
-          placeholder="전화번호를 입력해주세요('-'제외)"
-          className="input"
-          ref={tellRef}
-          defaultValue=""
-        />
-      </div>
-      <div>
-        <h8 id="tellcheck">전화번호 확인</h8>
-        <input
+          className="btn"
           type="button"
-          value="tellcheck"
-          onClick={handletellcheck}
-          id="tellcheckbutton"
+          value="회원가입"
+          onClick={handleJoin}
         />
-      </div>
-      <div className="radio">
-        <td width="400">
-          <input type="radio" name="gender" value="남" />
-          남자
-          <input type="radio" name="gender" value="여" />
-          여자
-        </td>
-      </div>
-      <input
-        className="btn"
-        type="button"
-        value="회원가입"
-        onClick={handleJoin}
-      />
-      <br />
-      <br />
-      <input
-        className="btn"
-        type="button"
-        value="로그인 ㄱㄱ"
-        onClick={handleLogin}
-      />
+        <input
+          className="btn"
+          type="button"
+          value="clear"
+          onClick={openModal2}
+        />
+      </form>
     </div>
   );
 };

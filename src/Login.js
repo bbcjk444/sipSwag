@@ -93,15 +93,15 @@ const Login = ({ modal, openModal }) => {
       <div className="login-wrap">
         <div className="login-html">
           <input
-            // id="tab-1"
+            id="tab-1"
             type="radio"
-            // name="tab"
+            name="tab"
             className="sign-in"
             checked
           />
-          <label class="tab">로그인</label>
+          <label className="tab">로그인</label>
           <input type="radio" className="sign-up" />
-          <label class="tab"></label>
+          <label className="tab"></label>
           <div className="login-form">
             <div className="sign-in-htm">
               <div className="group">
@@ -119,7 +119,7 @@ const Login = ({ modal, openModal }) => {
                 />
               </div>
               <div className="group">
-                <label for="check">
+                <label>
                   <span className="icon"></span>
                 </label>
               </div>

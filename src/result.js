@@ -4,8 +4,13 @@ import styled from "styled-components";
 import React, { useEffect } from "react";
 // import Kakao from "./kakao";
 import Slides from "./Slides";
+import axios from "axios";
 
 function result() {
+  axios
+    .get("http://localhost:5500/lemonss")
+    .then(function (res) {})
+    .then(function () {});
   const shareKakao = () => {
     try {
       if (window.Kakao) {
@@ -134,7 +139,6 @@ function result() {
       <div className="rectangle-div11" />
       <div className="div28" onClick={shareKakao}>
         친구에게 공유하기
-        {/* <Kakao /> */}
       </div>
       <div className="div29">동아리하러 가기</div>
 
