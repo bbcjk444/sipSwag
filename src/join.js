@@ -146,7 +146,7 @@ const Join = ({ modal2, openModal2 }) => {
     <div>
       <div className="wrap">
         <div className="login">
-          <h1>Log-up</h1>
+          <h1>회원가입</h1>
           <div className="login_id">
             <input
               type="id"
@@ -156,7 +156,7 @@ const Join = ({ modal2, openModal2 }) => {
               ref={idRef}
             />
           </div>
-          {/* <div>
+          <div>
             <h8 id="idcheck">아이디 중복 확인</h8>
             <input
               className="btn"
@@ -165,7 +165,7 @@ const Join = ({ modal2, openModal2 }) => {
               onClick={handleidcheck}
               id="idcheckbutton"
             />
-          </div> */}
+          </div>
           <div className="login_pw">
             <input
               type="password"
@@ -185,7 +185,7 @@ const Join = ({ modal2, openModal2 }) => {
               defaultValue=""
             />
           </div>
-          {/* <div>
+          <div>
             <h8 id="pwcheck">비밀번호 확인</h8>
             <input
               type="button"
@@ -193,7 +193,7 @@ const Join = ({ modal2, openModal2 }) => {
               onClick={handlepwcheck}
               id="pwcheckbutton"
             />
-          </div> */}
+          </div>
           <div className="login_id">
             <input
               type="id"
@@ -204,7 +204,7 @@ const Join = ({ modal2, openModal2 }) => {
               defaultValue=""
             />
           </div>
-          {/* <div>
+          <div>
             <h8 id="nickcheck">닉네임 중복 확인</h8>
             <input
               type="button"
@@ -212,7 +212,7 @@ const Join = ({ modal2, openModal2 }) => {
               onClick={handlenickcheck}
               id="nickcheckbutton"
             />
-          </div> */}
+          </div>
           <div className="login_id">
             <input
               type="text"
@@ -233,7 +233,7 @@ const Join = ({ modal2, openModal2 }) => {
               defaultValue=""
             />
           </div>
-          {/* <div>
+          <div>
             <h8 id="tellcheck">전화번호 확인</h8>
             <input
               className="btn"
@@ -242,15 +242,17 @@ const Join = ({ modal2, openModal2 }) => {
               onClick={handletellcheck}
               id="tellcheckbutton"
             />
-          </div> */}
-          {/* <div className="radio">
-            <td width="400">
+          </div>
+          <div className="radio">
+            <div>
               <input type="radio" name="gender" value="남" />
-              남자
+              <p>남자</p>
+            </div>
+            <div>
               <input type="radio" name="gender" value="여" />
-              여자
-            </td>
-          </div> */}
+              <p>여자</p>
+            </div>
+          </div>
           <div className="button">
             <input
               className="button , button2"
@@ -261,7 +263,7 @@ const Join = ({ modal2, openModal2 }) => {
             <input
               className="button, button2"
               type="button"
-              value="clear"
+              value="닫기"
               onClick={() => {
                 openModal2(modal2);
               }}

@@ -67,6 +67,6 @@
   overflow: hidden;
   text-align: center;
   font-size: var(--font-size-4xl);
-  color: #ff31f0;
+  /* color: #ff31f0; */
   font-family: "Noto Sans KR";
 }

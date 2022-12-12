@@ -121,7 +121,7 @@ const Scenarioupdate = ({ modal5, openModal5 }) => {
             type="text"
             id="scecheck"
             name="scecheck"
-            className="input"
+            className="text_input"
             ref={speak_storyRef}
             size="70"
           />

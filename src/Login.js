@@ -103,18 +103,7 @@ const Login = ({ modal, openModal }) => {
     <div>
       <div className="wrap">
         <div className="login">
-          <h2>Log-in</h2>
-          {/* <div className="login_sns">
-            <li>
-              <a href="#"></a>
-            </li>
-            <li>
-              <a href="#"></a>
-            </li>
-            <li>
-              <a href="#"></a>
-            </li>
-          </div> */}
+          <h2>로그인</h2>
           <div className="login_id">
             <h4>아이디</h4>
             <input
@@ -150,6 +139,7 @@ const Login = ({ modal, openModal }) => {
               value="로그인"
               onClick={handleLogin}
             />
+
             <input
               className="btn2"
               type="button"

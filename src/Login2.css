@@ -16,7 +16,7 @@ li {
 
 .wrap {
   width: 50vh;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   margin-left: 120px;
   align-items: center;
@@ -39,7 +39,7 @@ h2 {
   color: tomato;
   font-size: 50px;
 }
-.login_sns {
+/* .login_sns {
   padding: 20px;
   display: flex;
 }
@@ -59,10 +59,10 @@ h2 {
   background: white;
   font-size: 20px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .login_id {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 80%;
 }
 
@@ -77,7 +77,7 @@ h2 {
 }
 
 .login_pw {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 80%;
 }
 
@@ -117,8 +117,8 @@ h2 {
 }
 
 .button {
-  margin-top: 20px;
-  width: 80%;
+  margin-top: 5px;
+  width: 50%;
 }
 
 .button input {
@@ -145,4 +145,11 @@ h4 {
 
 .btn2 {
   background-color: orange;
+}
+.radio {
+  display: flex;
+}
+
+.radio :first-child {
+  margin-right: 15px;
 }
