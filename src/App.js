@@ -74,7 +74,7 @@ import Ch2_game_clear from "./ch2/ch2/Ch2_Game_clear";
 import Ch2_Clear from "./ch2/ch2/Story_ch2_clear";
 import SecondGameCard from "./ch2/ch2/secondGame/Cards";
 import SecondGameCar from "./ch2/ch2/DragCo";
-import Doe from "./scenariocall";
+import Sceup from "./scenariocall";
 import { useEffect } from "react";
 
 function App() {
@@ -220,7 +220,7 @@ function App() {
 
       <Route path="/ch2CarGame" element={<SecondGameCar />} />
 
-      <Route path="/sceup" element={<Doe />} />
+      <Route path="/sceup" element={<Sceup />} />
     </Routes>
   );
 }

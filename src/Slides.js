@@ -40,31 +40,37 @@ const Slides = () => {
           <img src={iconF} />
           <span className="D-title">당나귀</span>
           <span>봉사동아리</span>
+          <p>추천도 : 89%</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={iconS} />
-          <span className="D-title">당나귀</span>
-          <span>봉사동아리</span>
+          <span className="D-title">오로아</span>
+          <span>농사동아리</span>
+          <p>추천도 : 75%</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={iconT} />
-          <span className="D-title">당나귀</span>
-          <span>봉사동아리</span>
+          <span className="D-title">냥냥이</span>
+          <span>동물동아리</span>
+          <p>추천도 : 70%</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={iconSi} />
-          <span className="D-title">인공지능사관학교</span>
+          <span className="D-title">스마트인재</span>
           <span>it동아리</span>
+          <p>추천도 : 68%</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={iconFf} />
           <span className="D-title">인공지능사관학교</span>
           <span>개발동아리</span>
+          <p>추천도 : 67%</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={iconFff} />
-          <span className="D-title">인공지능사관학교</span>
-          <span>it동아리</span>
+          <span className="D-title">무등산</span>
+          <span>등산동아리</span>
+          <p>추천도 : 67%</p>
         </SwiperSlide>
       </Swiper>
     </>
