@@ -93,20 +93,14 @@ const Main_01 = () => {
           className="group-icon-main56"
           alt=""
           src="../Rectangle 377.png"
-          onClick={openModal5}
+          onClick={admin}
         />
-        {modal5 === true ? (
-          <Modal5 modal5={modal5} openModal5={openModal5} />
-        ) : null}
         <img
           className="group-icon-main57"
           alt=""
           src="../admin.png"
-          onClick={openModal5}
+          onClick={admin}
         />
-        {modal5 === true ? (
-          <Modal5 modal5={modal5} openModal5={openModal5} />
-        ) : null}
         <img className="group-icon-main58" alt="" src="../Group 334.png" />
       </div>
     );

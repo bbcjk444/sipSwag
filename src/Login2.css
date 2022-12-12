@@ -39,27 +39,6 @@ h2 {
   color: tomato;
   font-size: 50px;
 }
-/* .login_sns {
-  padding: 20px;
-  display: flex;
-}
-
-.login_sns li {
-  padding: 0px 15px;
-}
-
-.login_sns a {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 50px;
-  background: white;
-  font-size: 20px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
-} */
 
 .login_id {
   margin-top: 10px;
@@ -145,6 +124,7 @@ h4 {
 
 .btn2 {
   background-color: orange;
+  float: left;
 }
 .radio {
   display: flex;
@@ -152,4 +132,9 @@ h4 {
 
 .radio :first-child {
   margin-right: 15px;
+}
+
+#idcheck {
+  display: flex;
+  float: left;
 }

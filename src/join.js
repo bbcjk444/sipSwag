@@ -157,7 +157,9 @@ const Join = ({ modal2, openModal2 }) => {
             />
           </div>
           <div>
-            <h8 id="idcheck">아이디 중복 확인</h8>
+            <div>
+              <h3 id="idcheck">아이디 중복 확인</h3>
+            </div>
             <input
               className="btn"
               type="button"
@@ -186,7 +188,9 @@ const Join = ({ modal2, openModal2 }) => {
             />
           </div>
           <div>
-            <h8 id="pwcheck">비밀번호 확인</h8>
+            <div className="h3">
+              <h3 id="pwcheck">비밀번호 확인</h3>
+            </div>
             <input
               type="button"
               value="pwcheck"
@@ -205,7 +209,9 @@ const Join = ({ modal2, openModal2 }) => {
             />
           </div>
           <div>
-            <h8 id="nickcheck">닉네임 중복 확인</h8>
+            <div className="h3">
+              <h3 id="nickcheck">닉네임 중복 확인</h3>
+            </div>
             <input
               type="button"
               value="nickcheck"
@@ -234,7 +240,9 @@ const Join = ({ modal2, openModal2 }) => {
             />
           </div>
           <div>
-            <h8 id="tellcheck">전화번호 확인</h8>
+            <div className="h3">
+              <h3 id="tellcheck">전화번호 확인</h3>
+            </div>
             <input
               className="btn"
               type="button"

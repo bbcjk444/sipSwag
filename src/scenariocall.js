@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const Scenarioupdate = ({ modal5, openModal5 }) => {
+const Scenarioupdate = () => {
   const scenario_numRef = useRef();
   const chapter_numRef = useRef();
   const scene_numRef = useRef();
@@ -59,90 +59,80 @@ const Scenarioupdate = ({ modal5, openModal5 }) => {
   };
 
   return (
-    <div className="wrap" align="center">
-      <div className="login">
-        <form>
-          <div className="login_id">
-            <input
-              type="text"
-              id="scenario_num"
-              name="scenario_num"
-              placeholder="시나리오번호를입력해주세요"
-              className="input"
-              ref={scenario_numRef}
-              defaultValue=""
-            />
-          </div>
-          <div className="login_id">
-            <input
-              type="text"
-              id="chapter_num"
-              name="chapter_num"
-              placeholder="챕터 번호를 입력해주세요"
-              className="input"
-              ref={chapter_numRef}
-              defaultValue=""
-            />
-          </div>
-          <div className="login_id">
-            <input
-              type="text"
-              id="scene_num"
-              name="scene_num"
-              placeholder="화면 번호를 입력해주세요"
-              className="input"
-              ref={scene_numRef}
-              defaultValue=""
-            />
-          </div>
-          <div className="login_id">
-            <input
-              type="text"
-              id="speak_num"
-              name="speak_num"
-              placeholder="대사 번호를 입력해주세요"
-              className="input"
-              ref={speak_numRef}
-              defaultValue=""
-            />
-          </div>
-          <div className="button">
-            <input
-              className="btn"
-              type="button"
-              value="불러오기"
-              onClick={scecall}
-            />
-          </div>
-        </form>
-        <div className="login_id">
+    <div className="scenarioupdate" align="center">
+      <form>
+        <div className="text-area">
           <input
-            test-align="center"
             type="text"
-            id="scecheck"
-            name="scecheck"
+            id="scenario_num"
+            name="scenario_num"
+            placeholder="시나리오 번호를 입력해주세요"
             className="text_input"
-            ref={speak_storyRef}
-            size="70"
+            ref={scenario_numRef}
+            defaultValue=""
           />
         </div>
-        <div className="button">
+        <div className="text-area">
           <input
-            className="btn"
-            type="button"
-            value="대본 수정"
-            onClick={sceupdate}
-          />
-          <input
-            className="clear"
-            type="button"
-            value="닫기"
-            onClick={() => {
-              openModal5(modal5);
-            }}
+            type="text"
+            id="chapter_num"
+            name="chapter_num"
+            placeholder="챕터 번호를 입력해주세요"
+            className="text_input"
+            ref={chapter_numRef}
+            defaultValue=""
           />
         </div>
+        <div className="text-area">
+          <input
+            type="text"
+            id="scene_num"
+            name="scene_num"
+            placeholder="화면 번호를 입력해주세요"
+            className="text_input"
+            ref={scene_numRef}
+            defaultValue=""
+          />
+        </div>
+        <div className="text-area">
+          <input
+            type="text"
+            id="speak_num"
+            name="speak_num"
+            placeholder="대사 번호를 입력해주세요"
+            className="text_input"
+            ref={speak_numRef}
+            defaultValue=""
+          />
+        </div>
+        <input
+          className="btn"
+          type="button"
+          value="불러오기"
+          onClick={scecall}
+        />
+      </form>
+
+      <br />
+      <br />
+      <br />
+      <div className="text-area">
+        <input
+          test-align="center"
+          type="text"
+          id="scecheck"
+          name="scecheck"
+          className="text_input"
+          ref={speak_storyRef}
+          size="70"
+        />
       </div>
+      <input
+        className="btn"
+        type="button"
+        value="대사 수정"
+        onClick={sceupdate}
+      />
     </div>
   );
 };
